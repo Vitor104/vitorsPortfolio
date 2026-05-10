@@ -21,8 +21,8 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     nav: { hero: "Início", work: "Trabalho", about: "Sobre", contact: "Contato" },
     hero: {
       kicker: "Desenvolvedor Web — Portfólio 2026",
-      nameSolid: "Vitor",
-      nameMuted: "Mendes",
+      nameSolid: "João",
+      nameMuted: "Vitor",
       description:
         "Construo experiências web performáticas e acessíveis — de interfaces pixel-perfect a sistemas de back-end robustos.",
       loadingLabel: "Carregando experiência",

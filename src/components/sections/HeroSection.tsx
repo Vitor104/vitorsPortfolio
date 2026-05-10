@@ -1,6 +1,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 import { useI18n } from "../../i18n/I18nProvider";
+import { FadeInUp } from "../ui/FadeInUp";
 import styles from "./HeroSection.module.css";
 
 const INTRO_MS = 1400;
@@ -24,7 +25,9 @@ export function HeroSection() {
   return (
     <section id="hero" className={styles.section} aria-labelledby="hero-title">
       <div className={styles.shell}>
-        <p className={styles.kicker}>{messages.hero.kicker}</p>
+        <FadeInUp>
+          <p className={styles.kicker}>{messages.hero.kicker}</p>
+        </FadeInUp>
         <div className={styles.titleRow}>
           <motion.h1
             id="hero-title"

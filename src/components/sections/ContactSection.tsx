@@ -1,5 +1,6 @@
 import styles from "./ContactSection.module.css";
 import { useI18n } from "../../i18n/I18nProvider";
+import { FadeInUp } from "../ui/FadeInUp";
 import { LinkButton } from "../ui/LinkButton";
 
 const CONTACT = {
@@ -69,60 +70,68 @@ export function ContactSection() {
       aria-labelledby="contact-title"
     >
       <div className={styles.inner}>
-        <p className={styles.kicker}>{messages.contact.kicker}</p>
+        <FadeInUp>
+          <p className={styles.kicker}>{messages.contact.kicker}</p>
+        </FadeInUp>
         <div className={styles.layout}>
-          <h2 id="contact-title" className={styles.headline}>
-            <span className={styles.headlineLine}>
-              {messages.contact.headlineLine1}
-            </span>
-            <span className={styles.headlineMuted}>
-              {messages.contact.headlineLine2Muted}
-            </span>
-            <span className={styles.headlineLine}>
-              {messages.contact.headlineLine3}
-            </span>
-          </h2>
-          <div className={styles.actions}>
-            <ul className={styles.linkList}>
-              <li>
-                <a className={styles.contactLink} href={CONTACT.email}>
-                  <MailIcon />
-                  <span>{messages.contact.email}</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className={styles.contactLink}
-                  href={CONTACT.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <GithubIcon />
-                  <span>{messages.contact.github}</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className={styles.contactLink}
-                  href={CONTACT.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <LinkedinIcon />
-                  <span>{messages.contact.linkedin}</span>
-                </a>
-              </li>
-            </ul>
-            <LinkButton
-              href={CONTACT.email}
-              variant="dark"
-              className={styles.cta}
-            >
-              <span>{messages.contact.cta}</span>
-              <span aria-hidden className={styles.ctaArrow}>
-                ↗
+          <FadeInUp delay={0.06} className={styles.headlineReveal}>
+            <h2 id="contact-title" className={styles.headline}>
+              <span className={styles.headlineLine}>
+                {messages.contact.headlineLine1}
               </span>
-            </LinkButton>
+              <span className={styles.headlineMuted}>
+                {messages.contact.headlineLine2Muted}
+              </span>
+              <span className={styles.headlineLine}>
+                {messages.contact.headlineLine3}
+              </span>
+            </h2>
+          </FadeInUp>
+          <div className={styles.actions}>
+            <FadeInUp delay={0.12}>
+              <ul className={styles.linkList}>
+                <li>
+                  <a className={styles.contactLink} href={CONTACT.email}>
+                    <MailIcon />
+                    <span>{messages.contact.email}</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className={styles.contactLink}
+                    href={CONTACT.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <GithubIcon />
+                    <span>{messages.contact.github}</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className={styles.contactLink}
+                    href={CONTACT.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <LinkedinIcon />
+                    <span>{messages.contact.linkedin}</span>
+                  </a>
+                </li>
+              </ul>
+            </FadeInUp>
+            <FadeInUp delay={0.18} className={styles.ctaWrap}>
+              <LinkButton
+                href={CONTACT.email}
+                variant="dark"
+                className={styles.cta}
+              >
+                <span>{messages.contact.cta}</span>
+                <span aria-hidden className={styles.ctaArrow}>
+                  ↗
+                </span>
+              </LinkButton>
+            </FadeInUp>
           </div>
         </div>
       </div>

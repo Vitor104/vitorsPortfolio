@@ -20,6 +20,7 @@ import { useI18n } from "../../i18n/I18nProvider";
 import { Modal } from "../ui/Modal";
 import { LinkButton } from "../ui/LinkButton";
 import { Button } from "../ui/Button";
+import { FadeInUp } from "../ui/FadeInUp";
 import styles from "./WorkSection.module.css";
 
 const MAX_ITEM_WIDTH = 320;
@@ -251,85 +252,91 @@ export function WorkSection() {
       aria-labelledby="work-title"
     >
       <div className={styles.inner}>
-        <header className={styles.header}>
-          <p className={styles.kicker}>{messages.work.kicker}</p>
-          <h2 id="work-title" className={styles.srTitle}>
-            {messages.work.kicker}
-          </h2>
-          <p className={styles.counter}>{messages.work.counter(total)}</p>
-        </header>
+        <FadeInUp>
+          <header className={styles.header}>
+            <p className={styles.kicker}>{messages.work.kicker}</p>
+            <h2 id="work-title" className={styles.srTitle}>
+              {messages.work.kicker}
+            </h2>
+            <p className={styles.counter}>{messages.work.counter(total)}</p>
+          </header>
+        </FadeInUp>
 
-        <div
-          className={styles.stage}
-          data-modal-open={active !== null ? "true" : undefined}
-          aria-hidden={active !== null}
-        >
+        <FadeInUp delay={0.12} viewportAmount={0.15}>
           <div
-            className={styles.viewport}
-            ref={trackRef}
-            style={{ width: itemWidth }}
+            className={styles.stage}
+            data-modal-open={active !== null ? "true" : undefined}
+            aria-hidden={active !== null}
           >
-            <motion.ul
-              className={styles.track}
-              style={{ x }}
-              drag={reduce ? false : "x"}
-              dragConstraints={{ left: minX, right: 0 }}
-              dragElastic={0.1}
-              dragMomentum={false}
-              onDragEnd={handleDragEnd}
+            <div
+              className={styles.viewport}
+              ref={trackRef}
+              style={{ width: itemWidth }}
             >
-              {PROJECTS.map((project, i) => (
-                <CarouselItem
-                  key={project.id}
-                  project={project}
-                  index={i}
-                  count={total}
-                  parentX={x}
-                  itemWidth={itemWidth}
-                  isActive={i === activeIndex}
-                  reduce={reduce}
-                  onOpenDetails={setActive}
-                  openLabel={messages.work.openDetails}
-                />
-              ))}
-            </motion.ul>
-          </div>
-
-          <div className={styles.controls}>
-            <Button
-              type="button"
-              variant="ghost"
-              className={styles.arrow}
-              aria-label={messages.work.prev}
-              onClick={() => goTo(activeIndex - 1)}
-              disabled={activeIndex === 0}
-            >
-              ←
-            </Button>
-            <ol className={styles.dots} aria-hidden>
-              {PROJECTS.map((p, i) => (
-                <li key={p.id}>
-                  <button
-                    type="button"
-                    className={i === activeIndex ? styles.dotActive : styles.dot}
-                    onClick={() => goTo(i)}
-                    tabIndex={-1}
+              <motion.ul
+                className={styles.track}
+                style={{ x }}
+                drag={reduce ? false : "x"}
+                dragConstraints={{ left: minX, right: 0 }}
+                dragElastic={0.1}
+                dragMomentum={false}
+                onDragEnd={handleDragEnd}
+              >
+                {PROJECTS.map((project, i) => (
+                  <CarouselItem
+                    key={project.id}
+                    project={project}
+                    index={i}
+                    count={total}
+                    parentX={x}
+                    itemWidth={itemWidth}
+                    isActive={i === activeIndex}
+                    reduce={reduce}
+                    onOpenDetails={setActive}
+                    openLabel={messages.work.openDetails}
                   />
-                </li>
-              ))}
-            </ol>
-            <Button
-              type="button"
-              variant="ghost"
-              className={styles.arrow}
-              aria-label={messages.work.next}
-              onClick={() => goTo(activeIndex + 1)}
-              disabled={activeIndex === total - 1}
-            >
-              →
-            </Button>
+                ))}
+              </motion.ul>
+            </div>
+
+            <div className={styles.controls}>
+              <Button
+                type="button"
+                variant="ghost"
+                className={styles.arrow}
+                aria-label={messages.work.prev}
+                onClick={() => goTo(activeIndex - 1)}
+                disabled={activeIndex === 0}
+              >
+                ←
+              </Button>
+              <ol className={styles.dots} aria-hidden>
+                {PROJECTS.map((p, i) => (
+                  <li key={p.id}>
+                    <button
+                      type="button"
+                      className={
+                        i === activeIndex ? styles.dotActive : styles.dot
+                      }
+                      onClick={() => goTo(i)}
+                      tabIndex={-1}
+                    />
+                  </li>
+                ))}
+              </ol>
+              <Button
+                type="button"
+                variant="ghost"
+                className={styles.arrow}
+                aria-label={messages.work.next}
+                onClick={() => goTo(activeIndex + 1)}
+                disabled={activeIndex === total - 1}
+              >
+                →
+              </Button>
+            </div>
           </div>
-        </div>
+        </FadeInUp>
       </div>
 
       <Modal
