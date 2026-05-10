@@ -26,6 +26,12 @@
   @apply flex flex-col items-center gap-12 sm:gap-16;
 }
 
+/* Avoid 3D-transformed carousel layers compositing over the portaled modal (seen with the first slide + neighbor card). */
+.stage[data-modal-open="true"] {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .viewport {
   @apply relative mx-auto flex select-none items-center justify-center overflow-visible;
   height: clamp(360px, 50vw, 460px);

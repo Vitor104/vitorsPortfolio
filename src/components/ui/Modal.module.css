@@ -1,10 +1,11 @@
 .backdrop {
-  @apply fixed inset-0 z-[100] flex items-end justify-center bg-night/75 p-4 backdrop-blur-sm sm:items-center;
+  @apply fixed inset-0 z-[9999] flex items-end justify-center bg-night/75 p-4 backdrop-blur-sm sm:items-center;
   cursor: default;
+  isolation: isolate;
 }
 
 .panel {
-  @apply relative w-full max-w-lg overflow-hidden rounded-2xl border border-ink/10 bg-canvas text-ink shadow-[0_30px_80px_-20px_rgba(11,10,9,0.6)];
+  @apply relative z-10 w-full max-w-lg overflow-hidden rounded-2xl border border-ink/10 bg-canvas text-ink shadow-[0_30px_80px_-20px_rgba(11,10,9,0.6)];
   cursor: default;
 }
 

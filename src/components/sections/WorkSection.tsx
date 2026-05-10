@@ -259,7 +259,11 @@ export function WorkSection() {
           <p className={styles.counter}>{messages.work.counter(total)}</p>
         </header>
 
-        <div className={styles.stage}>
+        <div
+          className={styles.stage}
+          data-modal-open={active !== null ? "true" : undefined}
+          aria-hidden={active !== null}
+        >
           <div
             className={styles.viewport}
             ref={trackRef}
