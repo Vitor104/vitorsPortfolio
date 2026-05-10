@@ -1,0 +1,157 @@
+.section {
+  @apply relative overflow-hidden bg-canvas py-24 sm:py-32;
+}
+
+.inner {
+  @apply mx-auto flex w-full max-w-7xl flex-col gap-16 px-6 sm:px-8 lg:px-12;
+}
+
+.header {
+  @apply flex items-baseline justify-between gap-6;
+}
+
+.kicker {
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-accent;
+}
+
+.srTitle {
+  @apply sr-only;
+}
+
+.counter {
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-ink-muted;
+}
+
+.stage {
+  @apply flex flex-col items-center gap-12 sm:gap-16;
+}
+
+.viewport {
+  @apply relative mx-auto flex select-none items-center justify-center overflow-visible;
+  height: clamp(360px, 50vw, 460px);
+}
+
+.track {
+  @apply relative flex h-full cursor-grab list-none p-0 active:cursor-grabbing;
+  touch-action: pan-y;
+}
+
+.item {
+  @apply relative flex h-full shrink-0 items-center justify-center will-change-transform;
+}
+
+.itemReduced {
+  @apply relative flex h-full shrink-0 flex-col items-center justify-center;
+}
+
+.itemInner {
+  @apply flex h-full w-full flex-col items-center justify-center;
+  will-change: transform;
+}
+
+.cardImage {
+  @apply relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-ink/10 shadow-[0_30px_60px_-30px_rgba(14,13,10,0.55)] sm:rounded-2xl;
+}
+
+.cardImg {
+  @apply h-full w-full object-cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cardImageOverlay {
+  @apply pointer-events-none absolute inset-0 bg-gradient-to-t from-night/40 via-transparent to-transparent;
+}
+
+.cardMeta {
+  @apply mt-6 flex w-full max-w-[20rem] flex-col gap-3 text-center sm:mt-8;
+}
+
+.cardMetaTop {
+  @apply flex items-center justify-between gap-4;
+}
+
+.cardYear {
+  @apply text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-ink-muted;
+}
+
+.tagList {
+  @apply m-0 flex flex-wrap items-center justify-end gap-1.5 p-0;
+}
+
+.tag {
+  @apply rounded-full bg-ink px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-canvas;
+}
+
+.cardTitle {
+  @apply font-display text-xl font-semibold leading-tight tracking-tight text-ink sm:text-2xl;
+}
+
+.cardTagline {
+  @apply text-sm leading-relaxed text-ink-muted;
+}
+
+.cardCta {
+  @apply relative z-10 mt-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-ink/15 bg-canvas/80 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink hover:border-ink/30 hover:bg-canvas-deep;
+  cursor: pointer;
+  touch-action: manipulation;
+  pointer-events: auto;
+}
+
+.controls {
+  @apply flex items-center gap-6;
+}
+
+.arrow {
+  @apply inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 bg-canvas/60 text-lg text-ink hover:border-ink/30 hover:bg-canvas-deep disabled:opacity-40;
+}
+
+.dots {
+  @apply m-0 flex items-center gap-2 p-0;
+  list-style: none;
+}
+
+.dot,
+.dotActive {
+  @apply block h-1.5 cursor-pointer rounded-full border-0 transition-all;
+}
+
+.dot {
+  @apply w-1.5 bg-ink/25 hover:bg-ink/40;
+}
+
+.dotActive {
+  @apply w-8 bg-accent;
+}
+
+.modalBody {
+  @apply space-y-4;
+}
+
+.modalTagline {
+  @apply text-xs font-semibold uppercase tracking-[0.22em] text-accent;
+}
+
+.modalDesc {
+  @apply text-sm leading-relaxed text-ink-muted;
+}
+
+.stackBlock {
+  @apply rounded-xl border border-ink/10 bg-canvas-deep/50 p-4;
+}
+
+.stackLabel {
+  @apply text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-ink-muted;
+}
+
+.stackList {
+  @apply mt-2 flex flex-wrap gap-2;
+}
+
+.stackItem {
+  @apply rounded-full bg-ink px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-canvas;
+}
+
+.visit {
+  @apply w-full sm:w-auto;
+}

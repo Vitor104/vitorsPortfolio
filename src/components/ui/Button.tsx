@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import styles from "./Button.module.css";
 
-type Variant = "primary" | "secondary" | "ghost";
+type Variant = "primary" | "secondary" | "ghost" | "dark";
 
 type Props = {
   children: ReactNode;
@@ -13,6 +13,7 @@ const variantClass: Record<Variant, string> = {
   primary: styles.primary,
   secondary: styles.secondary,
   ghost: styles.ghost,
+  dark: styles.dark,
 };
 
 export function Button({

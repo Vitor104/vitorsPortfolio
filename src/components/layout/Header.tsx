@@ -2,8 +2,8 @@ import styles from "./Header.module.css";
 import { useI18n } from "../../i18n/I18nProvider";
 
 const links = [
-  { href: "#hero", key: "hero" as const },
-  { href: "#showcase", key: "showcase" as const },
+  { href: "#work", key: "work" as const },
+  { href: "#about", key: "about" as const },
   { href: "#contact", key: "contact" as const },
 ];
 
@@ -13,9 +13,8 @@ export function Header() {
   return (
     <header className={styles.root}>
       <div className={styles.inner}>
-        <a href="#hero" className={styles.brand}>
-          <span className={styles.brandMark} aria-hidden />
-          <span className={styles.brandText}>Vitor&apos;s Portfolio</span>
+        <a href="#hero" className={styles.brand} aria-label={messages.meta.siteTitle}>
+          <span className={styles.brandMark}>V</span>
         </a>
         <nav className={styles.nav} aria-label="Primary">
           <ul className={styles.list}>

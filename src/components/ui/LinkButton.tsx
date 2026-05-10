@@ -1,7 +1,7 @@
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 import btn from "./Button.module.css";
 
-type Variant = "primary" | "secondary" | "ghost";
+type Variant = "primary" | "secondary" | "ghost" | "dark";
 
 type Props = {
   children: ReactNode;
@@ -13,6 +13,7 @@ const variantClass: Record<Variant, string> = {
   primary: btn.primary,
   secondary: btn.secondary,
   ghost: btn.ghost,
+  dark: btn.dark,
 };
 
 export function LinkButton({

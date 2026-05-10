@@ -3,9 +3,10 @@ import "./styles/document.module.css";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { LanguageSwitcher } from "./components/i18n/LanguageSwitcher";
+import { AboutSection } from "./components/sections/AboutSection";
 import { ContactSection } from "./components/sections/ContactSection";
 import { HeroSection } from "./components/sections/HeroSection";
-import { ShowcaseSection } from "./components/sections/ShowcaseSection";
+import { WorkSection } from "./components/sections/WorkSection";
 
 export function AppShell() {
   return (
@@ -15,7 +16,8 @@ export function AppShell() {
         <Header />
         <main>
           <HeroSection />
-          <ShowcaseSection />
+          <WorkSection />
+          <AboutSection />
           <ContactSection />
         </main>
         <Footer />

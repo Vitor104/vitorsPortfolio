@@ -1,6 +1,7 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import type { ReactNode } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import styles from "./Modal.module.css";
 import { Button } from "./Button";
 
@@ -13,6 +14,12 @@ type Props = {
 };
 
 export function Modal({ open, title, closeLabel, onClose, children }: Props) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
@@ -22,7 +29,16 @@ export function Modal({ open, title, closeLabel, onClose, children }: Props) {
     };
   }, [open]);
 
-  return (
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, onClose]);
+
+  const tree = (
     <AnimatePresence>
       {open ? (
         <motion.div
@@ -45,6 +61,7 @@ export function Modal({ open, title, closeLabel, onClose, children }: Props) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
             transition={{ type: "spring", stiffness: 320, damping: 28 }}
+            onMouseDown={(e) => e.stopPropagation()}
           >
             <div className={styles.head}>
               <h2 id="modal-title" className={styles.title}>
@@ -66,4 +83,7 @@ export function Modal({ open, title, closeLabel, onClose, children }: Props) {
       ) : null}
     </AnimatePresence>
   );
+
+  if (!mounted) return null;
+  return createPortal(tree, document.body);
 }

@@ -4,18 +4,17 @@ export type Locale = (typeof LOCALES)[number];
 
 export type Messages = {
   meta: { siteTitle: string; languageMenu: string };
-  nav: { hero: string; showcase: string; contact: string };
+  nav: { hero: string; work: string; about: string; contact: string };
   hero: {
     kicker: string;
-    title: string;
-    subtitle: string;
-    ctaPrimary: string;
-    ctaSecondary: string;
+    nameSolid: string;
+    nameMuted: string;
+    description: string;
     loadingLabel: string;
   };
-  showcase: {
-    title: string;
-    subtitle: string;
+  work: {
+    kicker: string;
+    counter: (count: number) => string;
     prev: string;
     next: string;
     openDetails: string;
@@ -23,9 +22,18 @@ export type Messages = {
     visit: string;
     closeModal: string;
   };
-  contact: {
+  about: {
+    kicker: string;
     title: string;
-    subtitle: string;
+    body: string;
+    skills: readonly string[];
+  };
+  contact: {
+    kicker: string;
+    headlineLine1: string;
+    headlineLine2Muted: string;
+    headlineLine3: string;
+    cta: string;
     email: string;
     linkedin: string;
     github: string;

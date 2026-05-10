@@ -6,7 +6,9 @@ export type StackTag =
   | "Python"
   | "Supabase"
   | "Vite"
-  | "TypeScript";
+  | "TypeScript"
+  | "Storybook"
+  | "Tailwind";
 
 export type ProjectCopy = {
   title: string;
@@ -17,6 +19,8 @@ export type ProjectCopy = {
 export type Project = {
   id: string;
   url: string;
+  image: string;
+  year: number;
   stack: StackTag[];
   copy: Record<Locale, ProjectCopy>;
 };
@@ -25,7 +29,9 @@ export const PROJECTS: readonly Project[] = [
   {
     id: "pulse-dashboard",
     url: "https://example.com/pulse",
-    stack: ["React", "TypeScript", "Node", "Supabase"],
+    image: "/projects/pulse.svg",
+    year: 2025,
+    stack: ["React", "TypeScript", "Node"],
     copy: {
       pt: {
         title: "Pulse Analytics",
@@ -62,7 +68,9 @@ export const PROJECTS: readonly Project[] = [
   {
     id: "atlas-docs",
     url: "https://example.com/atlas",
-    stack: ["React", "Vite", "TypeScript", "Python"],
+    image: "/projects/atlas.svg",
+    year: 2024,
+    stack: ["React", "Vite", "TypeScript"],
     copy: {
       pt: {
         title: "Atlas Docs",
@@ -99,7 +107,9 @@ export const PROJECTS: readonly Project[] = [
   {
     id: "orbit-commerce",
     url: "https://example.com/orbit",
-    stack: ["React", "Node", "Supabase", "TypeScript"],
+    image: "/projects/orbit.svg",
+    year: 2024,
+    stack: ["React", "Node", "Supabase"],
     copy: {
       pt: {
         title: "Orbit Commerce",
@@ -130,6 +140,45 @@ export const PROJECTS: readonly Project[] = [
         tagline: "Checkout snello con osservabilità sul funnel",
         description:
           "Componentizzazione rigorosa, stati di caricamento espliciti e carosello catalogo performante.",
+      },
+    },
+  },
+  {
+    id: "lumen-design-system",
+    url: "https://example.com/lumen",
+    image: "/projects/lumen.svg",
+    year: 2025,
+    stack: ["React", "Storybook", "Tailwind"],
+    copy: {
+      pt: {
+        title: "Lumen Design System",
+        tagline: "Biblioteca acessível com tokens em camadas",
+        description:
+          "Sistema baseado em tokens, 60+ componentes acessíveis e documentação interativa em Storybook compartilhada entre produtos.",
+      },
+      en: {
+        title: "Lumen Design System",
+        tagline: "Accessible library with layered tokens",
+        description:
+          "Token-driven system, 60+ accessible components, and interactive Storybook docs shared across a product suite.",
+      },
+      fr: {
+        title: "Lumen Design System",
+        tagline: "Bibliothèque accessible à tokens en couches",
+        description:
+          "Système basé sur des tokens, plus de 60 composants accessibles et une documentation Storybook partagée entre produits.",
+      },
+      es: {
+        title: "Lumen Design System",
+        tagline: "Biblioteca accesible con tokens en capas",
+        description:
+          "Sistema basado en tokens, 60+ componentes accesibles y documentación interactiva en Storybook compartida entre productos.",
+      },
+      it: {
+        title: "Lumen Design System",
+        tagline: "Libreria accessibile con token a strati",
+        description:
+          "Sistema basato su token, oltre 60 componenti accessibili e documentazione Storybook condivisa tra prodotti.",
       },
     },
   },

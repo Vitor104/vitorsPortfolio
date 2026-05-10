@@ -1,22 +1,36 @@
 import type { Locale, Messages } from "./types";
 
+const SKILLS = [
+  "React",
+  "TypeScript",
+  "Next.js",
+  "Node.js",
+  "GraphQL",
+  "PostgreSQL",
+  "Tailwind CSS",
+  "Docker",
+  "AWS",
+  "Figma",
+  "Testing",
+  "Performance",
+] as const;
+
 export const DICTIONARIES: Record<Locale, Messages> = {
   pt: {
     meta: { siteTitle: "Portfólio do Vitor", languageMenu: "Idioma" },
-    nav: { hero: "Início", showcase: "Projetos", contact: "Contato" },
+    nav: { hero: "Início", work: "Trabalho", about: "Sobre", contact: "Contato" },
     hero: {
-      kicker: "Desenvolvedor Web · SPA · Performance",
-      title: "Soluções web claras, rápidas e bem arquitetadas.",
-      subtitle:
-        "Portfólio single-page com i18n instantâneo, motion acessível e vitrine técnica modular — pronto para evoluir com seus próximos cases.",
-      ctaPrimary: "Ver vitrine",
-      ctaSecondary: "Falar comigo",
+      kicker: "Desenvolvedor Web — Portfólio 2026",
+      nameSolid: "Vitor",
+      nameMuted: "Mendes",
+      description:
+        "Construo experiências web performáticas e acessíveis — de interfaces pixel-perfect a sistemas de back-end robustos.",
       loadingLabel: "Carregando experiência",
     },
-    showcase: {
-      title: "Vitrine de projetos",
-      subtitle:
-        "Aplicações reais em destaque. Navegue pelo carrossel e abra os detalhes para ver stack e link.",
+    work: {
+      kicker: "Trabalhos selecionados",
+      counter: (count) =>
+        `( ${count} ${count === 1 ? "projeto" : "projetos"} )`,
       prev: "Projeto anterior",
       next: "Próximo projeto",
       openDetails: "Abrir detalhes",
@@ -24,32 +38,41 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       visit: "Abrir site",
       closeModal: "Fechar detalhes",
     },
+    about: {
+      kicker: "Sobre",
+      title:
+        "Tenho carinho pelo ofício — código limpo, design pensado e experiências que parecem naturais para quem usa.",
+      body:
+        "Com mais de seis anos na indústria, trabalhei com startups e empresas estabelecidas — construindo desde produtos voltados ao cliente até ferramentas para devs. Brilho em ambientes onde design e engenharia se cruzam.",
+      skills: SKILLS,
+    },
     contact: {
-      title: "Contato direto",
-      subtitle:
-        "Sem formulários em servidor — atalhos rápidos para e-mail e redes.",
-      email: "E-mail",
-      linkedin: "LinkedIn",
-      github: "GitHub",
+      kicker: "Vamos conversar",
+      headlineLine1: "Vamos construir",
+      headlineLine2Muted: "algo",
+      headlineLine3: "juntos.",
+      cta: "Iniciar projeto",
+      email: "vitor@example.com",
+      linkedin: "linkedin.com/in/vitor",
+      github: "github.com/vitor",
     },
     footer: { rights: "Vitor's Portfolio · conteúdo estático · sem CMS" },
   },
   en: {
     meta: { siteTitle: "Vitor's Portfolio", languageMenu: "Language" },
-    nav: { hero: "Home", showcase: "Projects", contact: "Contact" },
+    nav: { hero: "Home", work: "Work", about: "About", contact: "Contact" },
     hero: {
-      kicker: "Web Developer · SPA · Performance",
-      title: "Clear, fast, well-architected web work.",
-      subtitle:
-        "Single-page portfolio with instant i18n, accessible motion, and a modular technical showcase — ready to grow with your next case studies.",
-      ctaPrimary: "View showcase",
-      ctaSecondary: "Get in touch",
+      kicker: "Web Developer — Portfolio 2026",
+      nameSolid: "Vitor",
+      nameMuted: "Mendes",
+      description:
+        "I build performant, accessible web experiences — from pixel-perfect interfaces to robust back-end systems.",
       loadingLabel: "Loading experience",
     },
-    showcase: {
-      title: "Project showcase",
-      subtitle:
-        "Real applications in focus. Browse the carousel and open details for stack and link.",
+    work: {
+      kicker: "Selected work",
+      counter: (count) =>
+        `( ${count} ${count === 1 ? "project" : "projects"} )`,
       prev: "Previous project",
       next: "Next project",
       openDetails: "Open details",
@@ -57,31 +80,41 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       visit: "Open website",
       closeModal: "Close details",
     },
+    about: {
+      kicker: "About",
+      title:
+        "I care deeply about the craft — clean code, considered design, and experiences that feel effortless to the people who use them.",
+      body:
+        "With over six years in the industry, I've worked with startups and established companies alike — building everything from customer-facing products to developer tooling. I thrive in collaborative environments where design and engineering intersect.",
+      skills: SKILLS,
+    },
     contact: {
-      title: "Direct contact",
-      subtitle: "No server-side forms — quick shortcuts to email and socials.",
-      email: "Email",
-      linkedin: "LinkedIn",
-      github: "GitHub",
+      kicker: "Get in touch",
+      headlineLine1: "Let's build",
+      headlineLine2Muted: "something",
+      headlineLine3: "together.",
+      cta: "Start a project",
+      email: "vitor@example.com",
+      linkedin: "linkedin.com/in/vitor",
+      github: "github.com/vitor",
     },
     footer: { rights: "Vitor's Portfolio · static content · no CMS" },
   },
   fr: {
     meta: { siteTitle: "Portfolio de Vitor", languageMenu: "Langue" },
-    nav: { hero: "Accueil", showcase: "Projets", contact: "Contact" },
+    nav: { hero: "Accueil", work: "Travail", about: "À propos", contact: "Contact" },
     hero: {
-      kicker: "Développeur Web · SPA · Performance",
-      title: "Des solutions web claires, rapides et bien architecturées.",
-      subtitle:
-        "Portfolio single-page avec i18n instantané, animations accessibles et vitrine modulaire — prêt à évoluer avec vos prochains cas.",
-      ctaPrimary: "Voir la vitrine",
-      ctaSecondary: "Me contacter",
+      kicker: "Développeur Web — Portfolio 2026",
+      nameSolid: "Vitor",
+      nameMuted: "Mendes",
+      description:
+        "Je construis des expériences web performantes et accessibles — d'interfaces pixel-perfect à des systèmes back-end robustes.",
       loadingLabel: "Chargement de l'expérience",
     },
-    showcase: {
-      title: "Vitrine de projets",
-      subtitle:
-        "Applications réelles mises en avant. Parcourez le carrousel et ouvrez les détails pour la stack et le lien.",
+    work: {
+      kicker: "Travaux sélectionnés",
+      counter: (count) =>
+        `( ${count} ${count === 1 ? "projet" : "projets"} )`,
       prev: "Projet précédent",
       next: "Projet suivant",
       openDetails: "Ouvrir les détails",
@@ -89,34 +122,41 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       visit: "Ouvrir le site",
       closeModal: "Fermer les détails",
     },
+    about: {
+      kicker: "À propos",
+      title:
+        "J'attache une grande importance au métier — code propre, design réfléchi et expériences fluides pour ceux qui les utilisent.",
+      body:
+        "Avec plus de six ans d'expérience, j'ai travaillé avec des startups comme avec des entreprises établies — en construisant des produits clients comme des outils pour développeurs. Je m'épanouis là où design et ingénierie se rencontrent.",
+      skills: SKILLS,
+    },
     contact: {
-      title: "Contact direct",
-      subtitle:
-        "Pas de formulaires côté serveur — raccourcis vers l'e-mail et les réseaux.",
-      email: "E-mail",
-      linkedin: "LinkedIn",
-      github: "GitHub",
+      kicker: "Restons en contact",
+      headlineLine1: "Construisons",
+      headlineLine2Muted: "quelque chose",
+      headlineLine3: "ensemble.",
+      cta: "Démarrer un projet",
+      email: "vitor@example.com",
+      linkedin: "linkedin.com/in/vitor",
+      github: "github.com/vitor",
     },
-    footer: {
-      rights: "Vitor's Portfolio · contenu statique · pas de CMS",
-    },
+    footer: { rights: "Vitor's Portfolio · contenu statique · pas de CMS" },
   },
   es: {
     meta: { siteTitle: "Portafolio de Vitor", languageMenu: "Idioma" },
-    nav: { hero: "Inicio", showcase: "Proyectos", contact: "Contacto" },
+    nav: { hero: "Inicio", work: "Trabajo", about: "Sobre mí", contact: "Contacto" },
     hero: {
-      kicker: "Desarrollador Web · SPA · Rendimiento",
-      title: "Soluciones web claras, rápidas y bien arquitectadas.",
-      subtitle:
-        "Portafolio de una sola página con i18n instantáneo, motion accesible y vitrina modular — listo para crecer con tus próximos casos.",
-      ctaPrimary: "Ver vitrina",
-      ctaSecondary: "Hablemos",
+      kicker: "Desarrollador Web — Portafolio 2026",
+      nameSolid: "Vitor",
+      nameMuted: "Mendes",
+      description:
+        "Construyo experiencias web performantes y accesibles — desde interfaces pixel-perfect hasta sistemas back-end robustos.",
       loadingLabel: "Cargando experiencia",
     },
-    showcase: {
-      title: "Vitrina de proyectos",
-      subtitle:
-        "Aplicaciones reales destacadas. Navega el carrusel y abre detalles para ver stack y enlace.",
+    work: {
+      kicker: "Trabajos seleccionados",
+      counter: (count) =>
+        `( ${count} ${count === 1 ? "proyecto" : "proyectos"} )`,
       prev: "Proyecto anterior",
       next: "Siguiente proyecto",
       openDetails: "Abrir detalles",
@@ -124,32 +164,41 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       visit: "Abrir sitio",
       closeModal: "Cerrar detalles",
     },
+    about: {
+      kicker: "Sobre mí",
+      title:
+        "Me importa profundamente el oficio — código limpio, diseño pensado y experiencias que se sienten naturales para quien las usa.",
+      body:
+        "Con más de seis años en la industria, he trabajado con startups y empresas consolidadas — construyendo desde productos para el cliente hasta herramientas para devs. Me realizo donde diseño e ingeniería se cruzan.",
+      skills: SKILLS,
+    },
     contact: {
-      title: "Contacto directo",
-      subtitle:
-        "Sin formularios en servidor — accesos rápidos a correo y redes.",
-      email: "Correo",
-      linkedin: "LinkedIn",
-      github: "GitHub",
+      kicker: "Hablemos",
+      headlineLine1: "Construyamos",
+      headlineLine2Muted: "algo",
+      headlineLine3: "juntos.",
+      cta: "Iniciar proyecto",
+      email: "vitor@example.com",
+      linkedin: "linkedin.com/in/vitor",
+      github: "github.com/vitor",
     },
     footer: { rights: "Vitor's Portfolio · contenido estático · sin CMS" },
   },
   it: {
     meta: { siteTitle: "Portfolio di Vitor", languageMenu: "Lingua" },
-    nav: { hero: "Home", showcase: "Progetti", contact: "Contatti" },
+    nav: { hero: "Home", work: "Lavori", about: "Chi sono", contact: "Contatti" },
     hero: {
-      kicker: "Sviluppatore Web · SPA · Performance",
-      title: "Soluzioni web chiare, veloci e ben architettonate.",
-      subtitle:
-        "Portfolio single-page con i18n istantaneo, motion accessibile e vetrina modulare — pronto a crescere con i tuoi prossimi casi studio.",
-      ctaPrimary: "Vedi vetrina",
-      ctaSecondary: "Contattami",
+      kicker: "Sviluppatore Web — Portfolio 2026",
+      nameSolid: "Vitor",
+      nameMuted: "Mendes",
+      description:
+        "Costruisco esperienze web performanti e accessibili — da interfacce pixel-perfect a sistemi back-end robusti.",
       loadingLabel: "Caricamento esperienza",
     },
-    showcase: {
-      title: "Vetrina progetti",
-      subtitle:
-        "Applicazioni reali in evidenza. Scorri il carosello e apri i dettagli per stack e link.",
+    work: {
+      kicker: "Lavori selezionati",
+      counter: (count) =>
+        `( ${count} ${count === 1 ? "progetto" : "progetti"} )`,
       prev: "Progetto precedente",
       next: "Progetto successivo",
       openDetails: "Apri dettagli",
@@ -157,13 +206,23 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       visit: "Apri sito",
       closeModal: "Chiudi dettagli",
     },
+    about: {
+      kicker: "Chi sono",
+      title:
+        "Mi importa profondamente del mestiere — codice pulito, design pensato ed esperienze fluide per chi le usa.",
+      body:
+        "Con oltre sei anni nel settore, ho lavorato sia con startup che con aziende consolidate — costruendo prodotti per i clienti e tool per sviluppatori. Sboccio dove design e ingegneria si incontrano.",
+      skills: SKILLS,
+    },
     contact: {
-      title: "Contatto diretto",
-      subtitle:
-        "Nessun modulo lato server — scorciatoie rapide a email e social.",
-      email: "Email",
-      linkedin: "LinkedIn",
-      github: "GitHub",
+      kicker: "Parliamone",
+      headlineLine1: "Costruiamo",
+      headlineLine2Muted: "qualcosa",
+      headlineLine3: "insieme.",
+      cta: "Avvia un progetto",
+      email: "vitor@example.com",
+      linkedin: "linkedin.com/in/vitor",
+      github: "github.com/vitor",
     },
     footer: { rights: "Vitor's Portfolio · contenuto statico · no CMS" },
   },

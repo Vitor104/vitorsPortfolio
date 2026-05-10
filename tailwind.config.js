@@ -9,17 +9,22 @@ export default {
       },
       colors: {
         ink: {
-          DEFAULT: "#0c0e14",
-          muted: "#6b7280",
+          DEFAULT: "#0E0D0A",
+          muted: "#8A8275",
+          softer: "#B7AFA0",
         },
         canvas: {
-          DEFAULT: "#f4f5f7",
-          deep: "#e8eaef",
+          DEFAULT: "#EFEAE0",
+          deep: "#E4DDCC",
         },
         accent: {
-          DEFAULT: "#2563eb",
-          hover: "#1d4ed8",
-          soft: "#dbeafe",
+          DEFAULT: "#C25A2D",
+          hover: "#A84A22",
+          soft: "#E7C9B6",
+        },
+        night: {
+          DEFAULT: "#0B0A09",
+          soft: "#171512",
         },
       },
     },

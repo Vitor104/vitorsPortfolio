@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFEAE0" />
+      <stop offset="100%" stop-color="#E4DDCC" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#g2)" />
+  <g stroke="#0E0D0A" stroke-opacity="0.08" stroke-width="1">
+    <line x1="60" y1="280" x2="540" y2="280" />
+    <line x1="60" y1="320" x2="540" y2="320" />
+    <line x1="60" y1="360" x2="540" y2="360" />
+    <line x1="60" y1="400" x2="540" y2="400" />
+    <line x1="60" y1="440" x2="540" y2="440" />
+    <line x1="60" y1="480" x2="540" y2="480" />
+    <line x1="60" y1="520" x2="540" y2="520" />
+    <line x1="60" y1="560" x2="540" y2="560" />
+    <line x1="60" y1="600" x2="540" y2="600" />
+    <line x1="60" y1="640" x2="540" y2="640" />
+  </g>
+  <g fill="#0E0D0A" font-family="Instrument Sans, DM Sans, system-ui, sans-serif">
+    <text x="60" y="140" font-size="20" font-weight="600" letter-spacing="6" fill="#C25A2D">CHAPTER 04</text>
+    <text x="60" y="220" font-size="68" font-weight="700" letter-spacing="-2">Atlas</text>
+    <text x="60" y="270" font-size="20" font-weight="500" opacity="0.55">Living documentation</text>
+  </g>
+  <g fill="#0E0D0A" opacity="0.5">
+    <rect x="60" y="288" width="380" height="6" />
+    <rect x="60" y="328" width="420" height="6" />
+    <rect x="60" y="368" width="300" height="6" />
+    <rect x="60" y="408" width="400" height="6" />
+    <rect x="60" y="448" width="350" height="6" />
+    <rect x="60" y="488" width="380" height="6" />
+    <rect x="60" y="528" width="260" height="6" />
+    <rect x="60" y="568" width="420" height="6" />
+    <rect x="60" y="608" width="320" height="6" />
+  </g>
+  <rect x="60" y="700" width="80" height="2" fill="#C25A2D" />
+  <text x="60" y="730" font-family="Instrument Sans, DM Sans, system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="4" fill="#0E0D0A" opacity="0.6">v3.2  DOCS</text>
+</svg>

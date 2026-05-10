@@ -1,0 +1,41 @@
+.section {
+  @apply bg-night text-canvas py-24 sm:py-32;
+}
+
+.inner {
+  @apply mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 sm:px-8 lg:px-12;
+}
+
+.kicker {
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-canvas/45;
+}
+
+.layout {
+  @apply grid gap-8 lg:grid-cols-12 lg:gap-12;
+}
+
+.intro {
+  @apply lg:col-span-9 lg:col-start-4 space-y-8;
+}
+
+.title {
+  @apply m-0 max-w-3xl font-display font-medium leading-[1.05] tracking-tight text-canvas text-[clamp(1.75rem,4vw,3rem)];
+}
+
+.body {
+  @apply max-w-2xl text-sm leading-relaxed text-canvas/65 sm:text-base;
+}
+
+.skills {
+  @apply mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-canvas/80 sm:grid-cols-3 lg:col-span-9 lg:col-start-4 lg:grid-cols-4 lg:gap-x-10;
+  list-style: none;
+  padding: 0;
+}
+
+.skill {
+  @apply flex items-center gap-2;
+}
+
+.skillDot {
+  @apply inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent;
+}

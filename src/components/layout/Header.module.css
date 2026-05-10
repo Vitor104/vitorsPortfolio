@@ -1,21 +1,17 @@
 .root {
-  @apply sticky top-0 z-40 border-b border-ink/5 bg-canvas/80 backdrop-blur-md;
+  @apply sticky top-0 z-40 bg-canvas/85 backdrop-blur-md;
 }
 
 .inner {
-  @apply mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8;
+  @apply mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-6 sm:px-8 lg:px-12;
 }
 
 .brand {
-  @apply flex items-center gap-2 rounded-lg text-sm font-semibold tracking-tight text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  @apply inline-flex items-center rounded text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent;
 }
 
 .brandMark {
-  @apply h-8 w-8 rounded-full bg-gradient-to-br from-accent to-indigo-600 shadow-md shadow-accent/30;
-}
-
-.brandText {
-  @apply hidden font-display sm:inline;
+  @apply font-display text-base font-semibold tracking-[0.18em] text-ink;
 }
 
 .nav {
@@ -23,9 +19,9 @@
 }
 
 .list {
-  @apply flex flex-wrap items-center justify-end gap-1 sm:gap-2;
+  @apply flex items-center gap-8 sm:gap-12;
 }
 
 .link {
-  @apply rounded-lg px-3 py-2 text-sm font-medium text-ink-muted transition-colors hover:bg-white/80 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:bg-canvas-deep;
+  @apply rounded text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-ink transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent;
 }

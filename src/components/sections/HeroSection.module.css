@@ -1,5 +1,5 @@
 .section {
-  @apply relative isolate overflow-hidden border-b border-ink/5 bg-gradient-to-b from-canvas via-white to-canvas;
+  @apply relative isolate overflow-hidden bg-canvas;
 }
 
 .loader {
@@ -11,57 +11,37 @@
 }
 
 .loaderOrb {
-  @apply block h-14 w-14 rounded-full border-2 border-accent/30 border-t-accent shadow-lg shadow-accent/20;
+  @apply block h-12 w-12 rounded-full border-2 border-ink/15 border-t-accent;
 }
 
 .loaderText {
-  @apply text-sm font-medium text-ink-muted;
+  @apply text-xs font-medium uppercase tracking-[0.22em] text-ink-muted;
 }
 
 .shell {
-  @apply mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:flex-row lg:items-center lg:gap-16 lg:px-8 lg:py-24;
-}
-
-.copy {
-  @apply flex-1 space-y-5;
+  @apply mx-auto flex w-full max-w-7xl flex-col gap-10 px-6 pb-24 pt-12 sm:px-8 sm:pb-32 sm:pt-16 lg:px-12 lg:pb-40 lg:pt-20;
 }
 
 .kicker {
-  @apply inline-flex max-w-prose rounded-full border border-ink/10 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink-muted;
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-accent;
+}
+
+.titleRow {
+  @apply grid gap-8 lg:grid-cols-12 lg:items-end lg:gap-12;
 }
 
 .title {
-  @apply font-display text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl;
+  @apply m-0 flex flex-col font-display font-semibold leading-[0.92] tracking-[-0.04em] text-[clamp(3.5rem,12vw,9rem)] lg:col-span-8;
 }
 
-.subtitle {
-  @apply max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg;
+.titleLine {
+  @apply text-ink;
 }
 
-.actions {
-  @apply flex flex-wrap gap-3 pt-2;
+.titleLineMuted {
+  @apply text-ink-softer;
 }
 
-.visual {
-  @apply flex flex-1 justify-center lg:justify-end;
-}
-
-.mosaic {
-  @apply grid max-w-sm grid-cols-2 gap-4 rounded-3xl border border-ink/5 bg-white/70 p-6 shadow-xl shadow-ink/10 backdrop-blur-md;
-}
-
-.tile {
-  @apply h-24 rounded-2xl bg-canvas-deep;
-}
-
-.tileAccent {
-  @apply h-24 rounded-2xl bg-gradient-to-br from-accent to-indigo-600 shadow-lg shadow-accent/30;
-}
-
-.tileMuted {
-  @apply h-24 rounded-2xl bg-ink/5;
-}
-
-.tileDeep {
-  @apply h-24 rounded-2xl bg-ink text-canvas;
+.description {
+  @apply max-w-xs text-sm leading-relaxed text-ink-muted lg:col-span-4 lg:max-w-sm lg:self-end lg:pb-3 lg:text-[0.95rem];
 }

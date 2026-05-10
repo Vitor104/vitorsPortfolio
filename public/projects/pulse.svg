@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1916" />
+      <stop offset="100%" stop-color="#0B0A09" />
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#EFEAE0" stroke-opacity="0.06" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="600" height="800" fill="url(#g)" />
+  <rect width="600" height="800" fill="url(#grid)" />
+  <g transform="translate(60 540)" stroke="#C25A2D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,160 60,140 120,150 180,90 240,110 300,40 360,70 420,30 480,60" />
+  </g>
+  <g transform="translate(60 600)" fill="#EFEAE0">
+    <rect width="14" height="60" opacity="0.85" />
+    <rect x="32" width="14" height="90" opacity="0.6" />
+    <rect x="64" width="14" height="40" opacity="0.85" />
+    <rect x="96" width="14" height="110" opacity="0.45" />
+    <rect x="128" width="14" height="70" opacity="0.85" />
+    <rect x="160" width="14" height="130" opacity="0.6" />
+    <rect x="192" width="14" height="50" opacity="0.85" />
+  </g>
+  <g fill="#EFEAE0" font-family="Instrument Sans, DM Sans, system-ui, sans-serif">
+    <text x="60" y="120" font-size="22" font-weight="600" letter-spacing="6" opacity="0.55">PULSE</text>
+    <text x="60" y="200" font-size="64" font-weight="700" letter-spacing="-2">Analytics</text>
+    <text x="60" y="240" font-size="18" font-weight="500" opacity="0.6">Operations dashboard</text>
+  </g>
+  <circle cx="510" cy="120" r="6" fill="#C25A2D" />
+</svg>
