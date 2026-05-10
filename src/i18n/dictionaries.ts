@@ -24,7 +24,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       nameSolid: "João",
       nameMuted: "Vitor",
       description:
-        "Construo experiências web performáticas e acessíveis — de interfaces pixel-perfect a sistemas de back-end robustos.",
+        "Desenvolvedor web focado em criar experiências modernas, responsivas e intuitivas.",
       loadingLabel: "Carregando experiência",
     },
     work: {
@@ -41,7 +41,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     about: {
       kicker: "Sobre",
       title:
-        "Tenho carinho pelo ofício — código limpo, design pensado e experiências que parecem naturais para quem usa.",
+        "Código, design e aprendizado contínuo.",
       languagesHeading: "Idiomas",
       languages: [
         { id: "en", name: "Inglês", level: "B2" },
@@ -50,7 +50,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
         { id: "it", name: "Italiano", level: "A1" },
       ],
       body:
-        "Com mais de seis anos na indústria, trabalhei com startups e empresas estabelecidas — construindo desde produtos voltados ao cliente até ferramentas para devs. Brilho em ambientes onde design e engenharia se cruzam.",
+      "Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia, interfaces modernas e aprendizado contínuo. Atualmente foco meus estudos em desenvolvimento fullstack, criando aplicações responsivas, intuitivas e com boa experiência de usuário. Além da programação, também tenho interesse em inteligência artificial, design, idiomas e desenvolvimento criativo, áreas que me ajudam a enxergar tecnologia de forma mais ampla e estratégica.",
       skills: SKILLS,
     },
     contact: {
