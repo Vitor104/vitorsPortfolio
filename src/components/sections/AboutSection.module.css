@@ -22,6 +22,35 @@
   @apply m-0 max-w-3xl font-display font-medium leading-[1.05] tracking-tight text-canvas text-[clamp(1.75rem,4vw,3rem)];
 }
 
+.languagesBlock {
+  @apply flex max-w-xl flex-col gap-3;
+}
+
+.languagesKicker {
+  @apply m-0 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-canvas/45;
+}
+
+.languages {
+  @apply m-0 flex flex-col gap-2.5 p-0 sm:gap-3;
+  list-style: none;
+}
+
+.language {
+  @apply grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-3 gap-y-1;
+}
+
+.languageFlag {
+  @apply text-xl leading-none;
+}
+
+.languageName {
+  @apply text-sm font-medium text-canvas sm:text-[0.95rem];
+}
+
+.languageLevel {
+  @apply rounded-full border border-canvas/20 bg-canvas/5 px-2.5 py-0.5 text-center text-[0.65rem] font-semibold tabular-nums uppercase tracking-[0.12em] text-canvas/70;
+}
+
 .body {
   @apply max-w-2xl text-sm leading-relaxed text-canvas/65 sm:text-base;
 }

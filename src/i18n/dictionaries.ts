@@ -42,6 +42,13 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       kicker: "Sobre",
       title:
         "Tenho carinho pelo ofício — código limpo, design pensado e experiências que parecem naturais para quem usa.",
+      languagesHeading: "Idiomas",
+      languages: [
+        { id: "en", name: "Inglês", level: "B2" },
+        { id: "fr", name: "Francês", level: "B1" },
+        { id: "es", name: "Espanhol", level: "A2" },
+        { id: "it", name: "Italiano", level: "A1" },
+      ],
       body:
         "Com mais de seis anos na indústria, trabalhei com startups e empresas estabelecidas — construindo desde produtos voltados ao cliente até ferramentas para devs. Brilho em ambientes onde design e engenharia se cruzam.",
       skills: SKILLS,
@@ -84,6 +91,13 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       kicker: "About",
       title:
         "I care deeply about the craft — clean code, considered design, and experiences that feel effortless to the people who use them.",
+      languagesHeading: "Languages",
+      languages: [
+        { id: "en", name: "English", level: "B2" },
+        { id: "fr", name: "French", level: "B1" },
+        { id: "es", name: "Spanish", level: "A2" },
+        { id: "it", name: "Italian", level: "A1" },
+      ],
       body:
         "With over six years in the industry, I've worked with startups and established companies alike — building everything from customer-facing products to developer tooling. I thrive in collaborative environments where design and engineering intersect.",
       skills: SKILLS,
@@ -126,6 +140,13 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       kicker: "À propos",
       title:
         "J'attache une grande importance au métier — code propre, design réfléchi et expériences fluides pour ceux qui les utilisent.",
+      languagesHeading: "Langues",
+      languages: [
+        { id: "en", name: "Anglais", level: "B2" },
+        { id: "fr", name: "Français", level: "B1" },
+        { id: "es", name: "Espagnol", level: "A2" },
+        { id: "it", name: "Italien", level: "A1" },
+      ],
       body:
         "Avec plus de six ans d'expérience, j'ai travaillé avec des startups comme avec des entreprises établies — en construisant des produits clients comme des outils pour développeurs. Je m'épanouis là où design et ingénierie se rencontrent.",
       skills: SKILLS,
@@ -168,6 +189,13 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       kicker: "Sobre mí",
       title:
         "Me importa profundamente el oficio — código limpio, diseño pensado y experiencias que se sienten naturales para quien las usa.",
+      languagesHeading: "Idiomas",
+      languages: [
+        { id: "en", name: "Inglés", level: "B2" },
+        { id: "fr", name: "Francés", level: "B1" },
+        { id: "es", name: "Español", level: "A2" },
+        { id: "it", name: "Italiano", level: "A1" },
+      ],
       body:
         "Con más de seis años en la industria, he trabajado con startups y empresas consolidadas — construyendo desde productos para el cliente hasta herramientas para devs. Me realizo donde diseño e ingeniería se cruzan.",
       skills: SKILLS,
@@ -210,6 +238,13 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       kicker: "Chi sono",
       title:
         "Mi importa profondamente del mestiere — codice pulito, design pensato ed esperienze fluide per chi le usa.",
+      languagesHeading: "Lingue",
+      languages: [
+        { id: "en", name: "Inglese", level: "B2" },
+        { id: "fr", name: "Francese", level: "B1" },
+        { id: "es", name: "Spagnolo", level: "A2" },
+        { id: "it", name: "Italiano", level: "A1" },
+      ],
       body:
         "Con oltre sei anni nel settore, ho lavorato sia con startup che con aziende consolidate — costruendo prodotti per i clienti e tool per sviluppatori. Sboccio dove design e ingegneria si incontrano.",
       skills: SKILLS,

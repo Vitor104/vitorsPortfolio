@@ -1,7 +1,15 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useI18n } from "../../i18n/I18nProvider";
+import type { AboutLanguageId } from "../../i18n/types";
 import { FadeInUp } from "../ui/FadeInUp";
 import styles from "./AboutSection.module.css";
+
+const LANGUAGE_FLAGS: Record<AboutLanguageId, string> = {
+  en: "🇬🇧",
+  fr: "🇫🇷",
+  es: "🇪🇸",
+  it: "🇮🇹",
+};
 
 export function AboutSection() {
   const { messages } = useI18n();
@@ -24,7 +32,31 @@ export function AboutSection() {
                 {messages.about.title}
               </h2>
             </FadeInUp>
-            <FadeInUp delay={0.08}>
+            <FadeInUp delay={0.04}>
+              <div className={styles.languagesBlock}>
+                <p
+                  id="about-languages-heading"
+                  className={styles.languagesKicker}
+                >
+                  {messages.about.languagesHeading}
+                </p>
+                <ul
+                  className={styles.languages}
+                  aria-labelledby="about-languages-heading"
+                >
+                  {messages.about.languages.map((lang) => (
+                    <li key={lang.id} className={styles.language}>
+                      <span className={styles.languageFlag} aria-hidden>
+                        {LANGUAGE_FLAGS[lang.id]}
+                      </span>
+                      <span className={styles.languageName}>{lang.name}</span>
+                      <span className={styles.languageLevel}>{lang.level}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeInUp>
+            <FadeInUp delay={0.1}>
               <p className={styles.body}>{messages.about.body}</p>
             </FadeInUp>
           </div>

@@ -2,6 +2,17 @@ export const LOCALES = ["pt", "en", "fr", "es", "it"] as const;
 
 export type Locale = (typeof LOCALES)[number];
 
+/** ISO-style id for emoji flags and stable keys — not tied to UI locale selection. */
+export type AboutLanguageId = "en" | "fr" | "es" | "it";
+
+export type AboutLanguage = {
+  readonly id: AboutLanguageId;
+  /** Localized language name ("English", "Inglês", …). */
+  readonly name: string;
+  /** CEFR-style level label; kept identical across locales. */
+  readonly level: string;
+};
+
 export type Messages = {
   meta: { siteTitle: string; languageMenu: string };
   nav: { hero: string; work: string; about: string; contact: string };
@@ -25,6 +36,9 @@ export type Messages = {
   about: {
     kicker: string;
     title: string;
+    /** Short heading for the spoken-language list (visible + used in aria-labelledby). */
+    languagesHeading: string;
+    languages: readonly AboutLanguage[];
     body: string;
     skills: readonly string[];
   };
