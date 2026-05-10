@@ -1,0 +1,67 @@
+.section {
+  @apply relative isolate overflow-hidden border-b border-ink/5 bg-gradient-to-b from-canvas via-white to-canvas;
+}
+
+.loader {
+  @apply absolute inset-0 z-20 flex items-center justify-center bg-canvas/95 backdrop-blur-sm;
+}
+
+.loaderInner {
+  @apply flex flex-col items-center gap-4;
+}
+
+.loaderOrb {
+  @apply block h-14 w-14 rounded-full border-2 border-accent/30 border-t-accent shadow-lg shadow-accent/20;
+}
+
+.loaderText {
+  @apply text-sm font-medium text-ink-muted;
+}
+
+.shell {
+  @apply mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:flex-row lg:items-center lg:gap-16 lg:px-8 lg:py-24;
+}
+
+.copy {
+  @apply flex-1 space-y-5;
+}
+
+.kicker {
+  @apply inline-flex max-w-prose rounded-full border border-ink/10 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink-muted;
+}
+
+.title {
+  @apply font-display text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl;
+}
+
+.subtitle {
+  @apply max-w-xl text-base leading-relaxed text-ink-muted sm:text-lg;
+}
+
+.actions {
+  @apply flex flex-wrap gap-3 pt-2;
+}
+
+.visual {
+  @apply flex flex-1 justify-center lg:justify-end;
+}
+
+.mosaic {
+  @apply grid max-w-sm grid-cols-2 gap-4 rounded-3xl border border-ink/5 bg-white/70 p-6 shadow-xl shadow-ink/10 backdrop-blur-md;
+}
+
+.tile {
+  @apply h-24 rounded-2xl bg-canvas-deep;
+}
+
+.tileAccent {
+  @apply h-24 rounded-2xl bg-gradient-to-br from-accent to-indigo-600 shadow-lg shadow-accent/30;
+}
+
+.tileMuted {
+  @apply h-24 rounded-2xl bg-ink/5;
+}
+
+.tileDeep {
+  @apply h-24 rounded-2xl bg-ink text-canvas;
+}

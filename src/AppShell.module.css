@@ -1,0 +1,7 @@
+.root {
+  @apply min-h-screen bg-canvas text-ink antialiased;
+}
+
+.main {
+  @apply flex min-h-screen flex-col;
+}

@@ -1,0 +1,23 @@
+.section {
+  @apply bg-white py-16 sm:py-20 lg:py-24;
+}
+
+.inner {
+  @apply mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 sm:px-6 lg:px-8;
+}
+
+.header {
+  @apply max-w-3xl space-y-3;
+}
+
+.title {
+  @apply font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl;
+}
+
+.subtitle {
+  @apply text-sm leading-relaxed text-ink-muted sm:text-base;
+}
+
+.actions {
+  @apply flex flex-col gap-3 sm:flex-row sm:flex-wrap;
+}

@@ -1,0 +1,31 @@
+.root {
+  @apply sticky top-0 z-40 border-b border-ink/5 bg-canvas/80 backdrop-blur-md;
+}
+
+.inner {
+  @apply mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8;
+}
+
+.brand {
+  @apply flex items-center gap-2 rounded-lg text-sm font-semibold tracking-tight text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+
+.brandMark {
+  @apply h-8 w-8 rounded-full bg-gradient-to-br from-accent to-indigo-600 shadow-md shadow-accent/30;
+}
+
+.brandText {
+  @apply hidden font-display sm:inline;
+}
+
+.nav {
+  @apply flex items-center;
+}
+
+.list {
+  @apply flex flex-wrap items-center justify-end gap-1 sm:gap-2;
+}
+
+.link {
+  @apply rounded-lg px-3 py-2 text-sm font-medium text-ink-muted transition-colors hover:bg-white/80 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:bg-canvas-deep;
+}
