@@ -1,15 +1,13 @@
-export const LOCALES = ["pt", "en", "fr", "es", "it"] as const;
+export const LOCALES = ["pt", "en", "es"] as const;
 
 export type Locale = (typeof LOCALES)[number];
 
 /** ISO-style id for emoji flags and stable keys — not tied to UI locale selection. */
-export type AboutLanguageId = "en" | "fr" | "es" | "it";
+export type AboutLanguageId = "pt" | "en" | "es";
 
 export type AboutLanguage = {
   readonly id: AboutLanguageId;
-  /** Localized language name ("English", "Inglês", …). */
   readonly name: string;
-  /** CEFR-style level label; kept identical across locales. */
   readonly level: string;
 };
 

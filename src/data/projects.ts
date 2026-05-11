@@ -27,15 +27,15 @@ export type Project = {
 
 export const PROJECTS: readonly Project[] = [
   {
-    id: "pulse-dashboard",
-    url: "https://example.com/pulse",
-    image: "/projects/pulse.svg",
+    id: "flowBill",
+    url: "https://flowbill.netlify.app/",
+    image: "src/data/imgProjects/FlowBill.png",
     year: 2025,
     stack: ["React", "TypeScript", "Node"],
     copy: {
       pt: {
-        title: "Pulse Analytics",
-        tagline: "Painel operacional em tempo quase real",
+        title: "FlowBill",
+        tagline: "Micro-SaaS focado em acabar com a procrastinação e a incerteza financeira de freelancers.",
         description:
           "SPA focada em leitura rápida de KPIs, filtros compartilháveis por URL e camada de dados estática para demos.",
       },
@@ -45,23 +45,11 @@ export const PROJECTS: readonly Project[] = [
         description:
           "SPA optimized for fast KPI scanning, URL-shareable filters, and a static data layer for demos.",
       },
-      fr: {
-        title: "Pulse Analytics",
-        tagline: "Tableau opérationnel en quasi temps réel",
-        description:
-          "SPA orientée lecture rapide des KPI, filtres partageables par URL et couche de données statique pour les démos.",
-      },
       es: {
         title: "Pulse Analytics",
         tagline: "Panel operativo casi en tiempo real",
         description:
           "SPA pensada para leer KPIs al vuelo, filtros compartibles por URL y capa de datos estática para demos.",
-      },
-      it: {
-        title: "Pulse Analytics",
-        tagline: "Dashboard operativo quasi in tempo reale",
-        description:
-          "SPA per lettura rapida dei KPI, filtri condivisibili via URL e layer dati statico per le demo.",
       },
     },
   },
@@ -84,23 +72,11 @@ export const PROJECTS: readonly Project[] = [
         description:
           "Mobile-first reading experience, local search, and auxiliary content generation via Python scripts in CI.",
       },
-      fr: {
-        title: "Atlas Docs",
-        tagline: "Documentation vivante pour équipes distribuées",
-        description:
-          "Lecture mobile-first, recherche locale et génération de contenu via scripts Python dans la CI.",
-      },
       es: {
         title: "Atlas Docs",
         tagline: "Documentación viva para equipos distribuidos",
         description:
           "Lectura mobile-first, búsqueda local y generación de contenido con scripts Python en CI.",
-      },
-      it: {
-        title: "Atlas Docs",
-        tagline: "Documentazione viva per team distribuiti",
-        description:
-          "Lettura mobile-first, ricerca locale e generazione contenuti con script Python in CI.",
       },
     },
   },
@@ -123,23 +99,11 @@ export const PROJECTS: readonly Project[] = [
         description:
           "Strict componentization, explicit loading states, and a performant catalog carousel.",
       },
-      fr: {
-        title: "Orbit Commerce",
-        tagline: "Checkout épuré avec observabilité du funnel",
-        description:
-          "Composants stricts, états de chargement explicites et carrousel catalogue performant.",
-      },
       es: {
         title: "Orbit Commerce",
         tagline: "Checkout ligero con observabilidad de embudo",
         description:
           "Componentización estricta, estados de carga explícitos y carrusel de catálogo performante.",
-      },
-      it: {
-        title: "Orbit Commerce",
-        tagline: "Checkout snello con osservabilità sul funnel",
-        description:
-          "Componentizzazione rigorosa, stati di caricamento espliciti e carosello catalogo performante.",
       },
     },
   },
@@ -162,23 +126,11 @@ export const PROJECTS: readonly Project[] = [
         description:
           "Token-driven system, 60+ accessible components, and interactive Storybook docs shared across a product suite.",
       },
-      fr: {
-        title: "Lumen Design System",
-        tagline: "Bibliothèque accessible à tokens en couches",
-        description:
-          "Système basé sur des tokens, plus de 60 composants accessibles et une documentation Storybook partagée entre produits.",
-      },
       es: {
         title: "Lumen Design System",
         tagline: "Biblioteca accesible con tokens en capas",
         description:
           "Sistema basado en tokens, 60+ componentes accesibles y documentación interactiva en Storybook compartida entre productos.",
-      },
-      it: {
-        title: "Lumen Design System",
-        tagline: "Libreria accessibile con token a strati",
-        description:
-          "Sistema basato su token, oltre 60 componenti accessibili e documentazione Storybook condivisa tra prodotti.",
       },
     },
   },

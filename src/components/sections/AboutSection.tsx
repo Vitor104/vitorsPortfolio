@@ -5,10 +5,9 @@ import { FadeInUp } from "../ui/FadeInUp";
 import styles from "./AboutSection.module.css";
 
 const LANGUAGE_FLAGS: Record<AboutLanguageId, string> = {
+  pt: "🇧🇷",
   en: "🇬🇧",
-  fr: "🇫🇷",
   es: "🇪🇸",
-  it: "🇮🇹",
 };
 
 export function AboutSection() {

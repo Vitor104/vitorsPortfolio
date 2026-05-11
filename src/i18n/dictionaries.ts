@@ -2,17 +2,17 @@ import type { Locale, Messages } from "./types";
 
 const SKILLS = [
   "React",
-  "TypeScript",
-  "Next.js",
-  "Node.js",
-  "GraphQL",
+  "Javascript",
+  "HTML5 & CSS3",
+  "Bootstrap 5",
+  "UI / UX Design",
   "PostgreSQL",
-  "Tailwind CSS",
-  "Docker",
-  "AWS",
-  "Figma",
-  "Testing",
-  "Performance",
+  "Supabase (BaaS)",
+  "Java",
+  "MySQL",
+  "Python",
+  "Scikit-learn",
+  "Git & GitHub",
 ] as const;
 
 export const DICTIONARIES: Record<Locale, Messages> = {
@@ -44,10 +44,9 @@ export const DICTIONARIES: Record<Locale, Messages> = {
         "Código, design e aprendizado contínuo.",
       languagesHeading: "Idiomas",
       languages: [
+        { id: "pt", name: "Português", level: "Nativo" },
         { id: "en", name: "Inglês", level: "B2" },
-        { id: "fr", name: "Francês", level: "B1" },
         { id: "es", name: "Espanhol", level: "A2" },
-        { id: "it", name: "Italiano", level: "A1" },
       ],
       body:
       "Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia, interfaces modernas e aprendizado contínuo. Atualmente foco meus estudos em desenvolvimento fullstack, criando aplicações responsivas, intuitivas e com boa experiência de usuário. Além da programação, também tenho interesse em inteligência artificial, design, idiomas e desenvolvimento criativo, áreas que me ajudam a enxergar tecnologia de forma mais ampla e estratégica.",
@@ -57,7 +56,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       kicker: "Vamos conversar",
       headlineLine1: "Vamos construir",
       headlineLine2Muted: "algo",
-      headlineLine3: "juntos.",
+      headlineLine3: "juntos?",
       cta: "Iniciar projeto",
       email: "vitor@example.com",
       linkedin: "linkedin.com/in/vitor",
@@ -93,10 +92,9 @@ export const DICTIONARIES: Record<Locale, Messages> = {
         "I care deeply about the craft — clean code, considered design, and experiences that feel effortless to the people who use them.",
       languagesHeading: "Languages",
       languages: [
+        { id: "pt", name: "Portuguese", level: "Native" },
         { id: "en", name: "English", level: "B2" },
-        { id: "fr", name: "French", level: "B1" },
         { id: "es", name: "Spanish", level: "A2" },
-        { id: "it", name: "Italian", level: "A1" },
       ],
       body:
         "With over six years in the industry, I've worked with startups and established companies alike — building everything from customer-facing products to developer tooling. I thrive in collaborative environments where design and engineering intersect.",
@@ -113,55 +111,6 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       github: "github.com/vitor",
     },
     footer: { rights: "Vitor's Portfolio · static content · no CMS" },
-  },
-  fr: {
-    meta: { siteTitle: "Portfolio de Vitor", languageMenu: "Langue" },
-    nav: { hero: "Accueil", work: "Travail", about: "À propos", contact: "Contact" },
-    hero: {
-      kicker: "Développeur Web — Portfolio 2026",
-      nameSolid: "Vitor",
-      nameMuted: "Mendes",
-      description:
-        "Je construis des expériences web performantes et accessibles — d'interfaces pixel-perfect à des systèmes back-end robustes.",
-      loadingLabel: "Chargement de l'expérience",
-    },
-    work: {
-      kicker: "Travaux sélectionnés",
-      counter: (count) =>
-        `( ${count} ${count === 1 ? "projet" : "projets"} )`,
-      prev: "Projet précédent",
-      next: "Projet suivant",
-      openDetails: "Ouvrir les détails",
-      stackLabel: "Outils",
-      visit: "Ouvrir le site",
-      closeModal: "Fermer les détails",
-    },
-    about: {
-      kicker: "À propos",
-      title:
-        "J'attache une grande importance au métier — code propre, design réfléchi et expériences fluides pour ceux qui les utilisent.",
-      languagesHeading: "Langues",
-      languages: [
-        { id: "en", name: "Anglais", level: "B2" },
-        { id: "fr", name: "Français", level: "B1" },
-        { id: "es", name: "Espagnol", level: "A2" },
-        { id: "it", name: "Italien", level: "A1" },
-      ],
-      body:
-        "Avec plus de six ans d'expérience, j'ai travaillé avec des startups comme avec des entreprises établies — en construisant des produits clients comme des outils pour développeurs. Je m'épanouis là où design et ingénierie se rencontrent.",
-      skills: SKILLS,
-    },
-    contact: {
-      kicker: "Restons en contact",
-      headlineLine1: "Construisons",
-      headlineLine2Muted: "quelque chose",
-      headlineLine3: "ensemble.",
-      cta: "Démarrer un projet",
-      email: "vitor@example.com",
-      linkedin: "linkedin.com/in/vitor",
-      github: "github.com/vitor",
-    },
-    footer: { rights: "Vitor's Portfolio · contenu statique · pas de CMS" },
   },
   es: {
     meta: { siteTitle: "Portafolio de Vitor", languageMenu: "Idioma" },
@@ -191,10 +140,9 @@ export const DICTIONARIES: Record<Locale, Messages> = {
         "Me importa profundamente el oficio — código limpio, diseño pensado y experiencias que se sienten naturales para quien las usa.",
       languagesHeading: "Idiomas",
       languages: [
+        { id: "pt", name: "Portugués", level: "Nativo" },
         { id: "en", name: "Inglés", level: "B2" },
-        { id: "fr", name: "Francés", level: "B1" },
         { id: "es", name: "Español", level: "A2" },
-        { id: "it", name: "Italiano", level: "A1" },
       ],
       body:
         "Con más de seis años en la industria, he trabajado con startups y empresas consolidadas — construyendo desde productos para el cliente hasta herramientas para devs. Me realizo donde diseño e ingeniería se cruzan.",
@@ -212,55 +160,6 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     },
     footer: { rights: "Vitor's Portfolio · contenido estático · sin CMS" },
   },
-  it: {
-    meta: { siteTitle: "Portfolio di Vitor", languageMenu: "Lingua" },
-    nav: { hero: "Home", work: "Lavori", about: "Chi sono", contact: "Contatti" },
-    hero: {
-      kicker: "Sviluppatore Web — Portfolio 2026",
-      nameSolid: "Vitor",
-      nameMuted: "Mendes",
-      description:
-        "Costruisco esperienze web performanti e accessibili — da interfacce pixel-perfect a sistemi back-end robusti.",
-      loadingLabel: "Caricamento esperienza",
-    },
-    work: {
-      kicker: "Lavori selezionati",
-      counter: (count) =>
-        `( ${count} ${count === 1 ? "progetto" : "progetti"} )`,
-      prev: "Progetto precedente",
-      next: "Progetto successivo",
-      openDetails: "Apri dettagli",
-      stackLabel: "Strumenti",
-      visit: "Apri sito",
-      closeModal: "Chiudi dettagli",
-    },
-    about: {
-      kicker: "Chi sono",
-      title:
-        "Mi importa profondamente del mestiere — codice pulito, design pensato ed esperienze fluide per chi le usa.",
-      languagesHeading: "Lingue",
-      languages: [
-        { id: "en", name: "Inglese", level: "B2" },
-        { id: "fr", name: "Francese", level: "B1" },
-        { id: "es", name: "Spagnolo", level: "A2" },
-        { id: "it", name: "Italiano", level: "A1" },
-      ],
-      body:
-        "Con oltre sei anni nel settore, ho lavorato sia con startup che con aziende consolidate — costruendo prodotti per i clienti e tool per sviluppatori. Sboccio dove design e ingegneria si incontrano.",
-      skills: SKILLS,
-    },
-    contact: {
-      kicker: "Parliamone",
-      headlineLine1: "Costruiamo",
-      headlineLine2Muted: "qualcosa",
-      headlineLine3: "insieme.",
-      cta: "Avvia un progetto",
-      email: "vitor@example.com",
-      linkedin: "linkedin.com/in/vitor",
-      github: "github.com/vitor",
-    },
-    footer: { rights: "Vitor's Portfolio · contenuto statico · no CMS" },
-  },
 };
 
 export const DEFAULT_LOCALE: Locale = "pt";
@@ -268,7 +167,5 @@ export const DEFAULT_LOCALE: Locale = "pt";
 export const LOCALE_HTML_LANG: Record<Locale, string> = {
   pt: "pt-BR",
   en: "en",
-  fr: "fr",
   es: "es",
-  it: "it",
 };

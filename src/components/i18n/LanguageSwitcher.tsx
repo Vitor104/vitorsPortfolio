@@ -5,9 +5,7 @@ import styles from "./LanguageSwitcher.module.css";
 const LABELS: Record<Locale, string> = {
   pt: "PT",
   en: "EN",
-  fr: "FR",
   es: "ES",
-  it: "IT",
 };
 
 export function LanguageSwitcher() {
