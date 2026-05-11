@@ -36,7 +36,6 @@ export type Messages = {
   about: {
     kicker: string;
     title: string;
-    /** Short heading for the spoken-language list (visible + used in aria-labelledby). */
     languagesHeading: string;
     languages: readonly AboutLanguage[];
     body: string;

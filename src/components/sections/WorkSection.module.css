@@ -1,5 +1,6 @@
 .section {
-  @apply relative overflow-hidden bg-canvas py-24 sm:py-32;
+  /* scroll-mt: in-page #work + sticky header; extra top padding avoids kicker sitting under header */
+  @apply relative overflow-hidden scroll-mt-28 bg-canvas pb-24 pt-28 sm:scroll-mt-32 sm:pb-32 sm:pt-32;
 }
 
 .inner {
@@ -23,7 +24,7 @@
 }
 
 .stage {
-  @apply flex flex-col items-center gap-12 sm:gap-16;
+  @apply flex w-full max-w-full flex-col items-center gap-12 sm:gap-16;
 }
 
 /* Avoid 3D-transformed carousel layers compositing over the portaled modal (seen with the first slide + neighbor card). */
@@ -33,25 +34,28 @@
 }
 
 .viewport {
-  @apply relative mx-auto flex select-none items-center justify-center overflow-visible;
-  height: clamp(360px, 50vw, 460px);
+  /* justify-start: track math (x=0) assumes ul is flush left — centering the ul here broke mobile/desktop */
+  @apply relative mx-auto flex w-full max-w-full select-none items-center justify-start overflow-visible;
+  /* Tall enough for 3/4 preview + meta + CTA (320–1024px) */
+  min-height: clamp(30rem, 35vw + 16rem, 38rem);
 }
 
 .track {
-  @apply relative flex h-full cursor-grab list-none p-0 active:cursor-grabbing;
+  @apply relative flex min-h-0 cursor-grab list-none p-0 active:cursor-grabbing;
   touch-action: pan-y;
 }
 
 .item {
-  @apply relative flex h-full shrink-0 items-center justify-center will-change-transform;
+  @apply relative flex min-h-0 shrink-0 items-stretch justify-center will-change-transform;
 }
 
 .itemReduced {
-  @apply relative flex h-full shrink-0 flex-col items-center justify-center;
+  @apply relative flex min-h-0 shrink-0 flex-col items-center justify-center;
 }
 
 .itemInner {
-  @apply flex h-full w-full flex-col items-center justify-center;
+  @apply flex w-full max-w-full flex-col items-center justify-center;
+  transform-origin: center center;
   will-change: transform;
 }
 

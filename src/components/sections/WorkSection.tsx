@@ -26,6 +26,14 @@ import styles from "./WorkSection.module.css";
 const MAX_ITEM_WIDTH = 320;
 const ITEM_VW = 0.62;
 
+/** Absolute paths in `public/` — respects Vite `base` when not `/`. */
+function publicAsset(absolutePath: string): string {
+  const base = import.meta.env.BASE_URL;
+  const path = absolutePath.startsWith("/") ? absolutePath : `/${absolutePath}`;
+  const root = base.endsWith("/") ? base.slice(0, -1) : base;
+  return root ? `${root}${path}` : path;
+}
+
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
 }
@@ -113,7 +121,7 @@ function CarouselItem({
         <div className={styles.cardImage}>
           <img
             draggable={false}
-            src={project.image}
+            src={publicAsset(project.image)}
             alt={copy.title}
             className={styles.cardImg}
           />
@@ -145,7 +153,7 @@ function CarouselItem({
         <div className={styles.cardImage}>
           <img
             draggable={false}
-            src={project.image}
+            src={publicAsset(project.image)}
             alt={copy.title}
             className={styles.cardImg}
             loading="lazy"
@@ -262,7 +270,11 @@ export function WorkSection() {
           </header>
         </FadeInUp>
 
-        <FadeInUp delay={0.12} viewportAmount={0.15}>
+        <FadeInUp
+          delay={0.12}
+          viewportAmount={0.15}
+          className="w-full"
+        >
           <div
             className={styles.stage}
             data-modal-open={active !== null ? "true" : undefined}
