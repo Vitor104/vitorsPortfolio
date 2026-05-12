@@ -2,13 +2,14 @@ import type { Locale } from "../i18n/types";
 
 export type StackTag =
   | "React"
-  | "Node"
-  | "Python"
+  | "Tailwind CSS"
+  | "Lucide React"
   | "Supabase"
   | "Vite"
-  | "TypeScript"
-  | "Storybook"
-  | "Tailwind";
+  | "Bootstrap 5"
+  | "OpenWeatherMap API"
+  | "GSAP"
+  | "CSS3";
 
 export type ProjectCopy = {
   title: string;
@@ -31,106 +32,106 @@ export const PROJECTS: readonly Project[] = [
     url: "https://flowbill.netlify.app/",
     image: "src/data/imgProjects/FlowBill.png",
     year: 2025,
-    stack: ["React", "TypeScript", "Node"],
+    stack: ["React", "Tailwind CSS", "Lucide React"],
     copy: {
       pt: {
         title: "FlowBill",
-        tagline: "Micro-SaaS focado em acabar com a procrastinação e a incerteza financeira de freelancers.",
+        tagline: "Gamificação financeira e tracking para freelancers",
         description:
-          "SPA focada em leitura rápida de KPIs, filtros compartilháveis por URL e camada de dados estática para demos.",
+          "Cronômetro de faturamento em tempo real, Client-Side Storage para máxima privacidade e UI reativa estilizada via classes utilitárias.",
       },
       en: {
-        title: "Pulse Analytics",
-        tagline: "Near real-time operations dashboard",
+        title: "FlowBill",
+        tagline: "Financial gamification and tracking for freelancers",
         description:
-          "SPA optimized for fast KPI scanning, URL-shareable filters, and a static data layer for demos.",
+          "Real-time billing timer, Client-Side Storage for maximum privacy, and reactive UI styled via utility classes.",
       },
       es: {
-        title: "Pulse Analytics",
-        tagline: "Panel operativo casi en tiempo real",
+        title: "FlowBill",
+        tagline: "Gamificación financiera y seguimiento para freelancers",
         description:
-          "SPA pensada para leer KPIs al vuelo, filtros compartibles por URL y capa de datos estática para demos.",
+          "Cronómetro de facturación en tiempo real, Client-Side Storage para máxima privacidad y UI reactiva estilizada mediante clases utilitarias.",
       },
     },
   },
   {
-    id: "atlas-docs",
-    url: "https://example.com/atlas",
-    image: "/projects/atlas.svg",
+    id: "lume-dashboard",
+    url: "https://lumedashboard.netlify.app/login",
+    image: "src/data/imgProjects/lumeDashboard.png",
+    year: 2026,
+    stack: ["React", "Bootstrap 5", "Supabase", "Vite"],
+    copy: {
+      pt: {
+        title: "Lume Dashboard",
+        tagline: "Sistema de gestão de vendas e estoque",
+        description:
+          "Sistema que não apenas registra o que saiu, mas prevê o que vai acontecer com o estoque.",
+      },
+      en: {
+        title: "Lume Dashboard",
+        tagline: "Sales and inventory management system",
+        description:
+          "A system that not only records what went out, but predicts what will happen with the inventory.",
+      },
+      es: {
+        title: "Lume Dashboard",
+        tagline: "Sistema de gestión de ventas e inventario",
+        description:
+          "Un sistema que no solo registra lo que salió, sino que predice lo que sucederá con el inventario.",
+      },
+    },
+  },
+  {
+    id: "sky-cast",
+    url: "https://skycastdaily.netlify.app/",
+    image: "src/data/imgProjects/SkyCast.png",
     year: 2024,
-    stack: ["React", "Vite", "TypeScript"],
+    stack: ["React", "Bootstrap 5", "OpenWeatherMap API"],
     copy: {
       pt: {
-        title: "Atlas Docs",
-        tagline: "Documentação viva para squads distribuídos",
+        title: "Sky Cast",
+        tagline: "Sua janela em tempo real para o clima global",
         description:
-          "Experiência de leitura mobile-first, busca local e geração de conteúdo auxiliar por scripts Python no CI.",
+          "Uma interface intuitiva que consome a OpenWeather API para fornecer dados meteorológicos precisos de qualquer cidade, transformando números brutos em previsões visuais claras.",
       },
       en: {
-        title: "Atlas Docs",
-        tagline: "Living documentation for distributed squads",
+        title: "Sky Cast",
+        tagline: "Your real-time window into global weather",
         description:
-          "Mobile-first reading experience, local search, and auxiliary content generation via Python scripts in CI.",
+          "An intuitive interface powered by the OpenWeather API to provide accurate meteorological data for any city, transforming raw numbers into clear visual forecasts.",
       },
       es: {
-        title: "Atlas Docs",
-        tagline: "Documentación viva para equipos distribuidos",
+        title: "Sky Cast",
+        tagline: "Tu ventana en tiempo real al clima global",
         description:
-          "Lectura mobile-first, búsqueda local y generación de contenido con scripts Python en CI.",
+          "Una interfaz intuitiva que utiliza la API de OpenWeather para ofrecer datos meteorológicos precisos de cualquier ciudad, transformando estadísticas en pronósticos visuales claros.",
       },
     },
   },
   {
-    id: "orbit-commerce",
-    url: "https://example.com/orbit",
-    image: "/projects/orbit.svg",
-    year: 2024,
-    stack: ["React", "Node", "Supabase"],
+    id: "artemis-project",
+    url: "https://artemiisproject.netlify.app/",
+    image: "src/data/imgProjects/ArtemisProject.png",
+    year: 2026,
+    stack: ["React", "Vite", "GSAP", "CSS3"],
     copy: {
       pt: {
-        title: "Orbit Commerce",
-        tagline: "Checkout enxuto com observabilidade de funil",
+        title: "Artemis Project",
+        tagline: "Scrollytelling imersivo pelo espaço profundo",
         description:
-          "Componentização estrita, estados de carregamento explícitos e vitrine de catálogo com carrossel performático.",
+          "Experiência cinematográfica com rolagem horizontal simulada (Fake Horizontal Scroll), animações atreladas ao scroll de alta performance e degradação graciosa para dispositivos móveis.",
       },
       en: {
-        title: "Orbit Commerce",
-        tagline: "Lean checkout with funnel observability",
+        title: "Artemis Project",
+        tagline: "Immersive scrollytelling through deep space",
         description:
-          "Strict componentization, explicit loading states, and a performant catalog carousel.",
+          "Cinematic experience featuring simulated horizontal scrolling (Fake Horizontal Scroll), high-performance scroll-linked animations, and graceful degradation for mobile devices.",
       },
       es: {
-        title: "Orbit Commerce",
-        tagline: "Checkout ligero con observabilidad de embudo",
+        title: "Artemis Project",
+        tagline: "Scrollytelling inmersivo por el espacio profundo",
         description:
-          "Componentización estricta, estados de carga explícitos y carrusel de catálogo performante.",
-      },
-    },
-  },
-  {
-    id: "lumen-design-system",
-    url: "https://example.com/lumen",
-    image: "/projects/lumen.svg",
-    year: 2025,
-    stack: ["React", "Storybook", "Tailwind"],
-    copy: {
-      pt: {
-        title: "Lumen Design System",
-        tagline: "Biblioteca acessível com tokens em camadas",
-        description:
-          "Sistema baseado em tokens, 60+ componentes acessíveis e documentação interativa em Storybook compartilhada entre produtos.",
-      },
-      en: {
-        title: "Lumen Design System",
-        tagline: "Accessible library with layered tokens",
-        description:
-          "Token-driven system, 60+ accessible components, and interactive Storybook docs shared across a product suite.",
-      },
-      es: {
-        title: "Lumen Design System",
-        tagline: "Biblioteca accesible con tokens en capas",
-        description:
-          "Sistema basado en tokens, 60+ componentes accesibles y documentación interactiva en Storybook compartida entre productos.",
+          "Experiencia cinematográfica con desplazamiento horizontal simulado (Fake Horizontal Scroll), animaciones vinculadas al scroll de alto rendimiento y degradación elegante para dispositivos móviles.",
       },
     },
   },
