@@ -8,6 +8,8 @@ const LANGUAGE_FLAGS: Record<AboutLanguageId, string> = {
   pt: "🇧🇷",
   en: "🇬🇧",
   es: "🇪🇸",
+  fr: "🇫🇷",
+  it: "🇮🇹",
 };
 
 export function AboutSection() {

@@ -47,6 +47,8 @@ export const DICTIONARIES: Record<Locale, Messages> = {
         { id: "pt", name: "Português", level: "Nativo" },
         { id: "en", name: "Inglês", level: "B2" },
         { id: "es", name: "Espanhol", level: "A2" },
+        { id: "fr", name: "Francês", level: "B1" },
+        { id: "it", name: "Italiano", level: "A1" },
       ],
       body:
       "Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia, interfaces modernas e aprendizado contínuo. Atualmente foco meus estudos em desenvolvimento fullstack, criando aplicações responsivas, intuitivas e com boa experiência de usuário. Além da programação, também tenho interesse em inteligência artificial, design, idiomas e desenvolvimento criativo, áreas que me ajudam a enxergar tecnologia de forma mais ampla e estratégica.",
@@ -69,10 +71,10 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     nav: { hero: "Home", work: "Work", about: "About", contact: "Contact" },
     hero: {
       kicker: "Web Developer — Portfolio 2026",
-      nameSolid: "Vitor",
-      nameMuted: "Mendes",
+      nameSolid: "João",
+      nameMuted: "Vitor",
       description:
-        "I build performant, accessible web experiences — from pixel-perfect interfaces to robust back-end systems.",
+        "Web developer focused on creating modern, responsive, and intuitive experiences.",
       loadingLabel: "Loading experience",
     },
     work: {
@@ -89,22 +91,24 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     about: {
       kicker: "About",
       title:
-        "I care deeply about the craft — clean code, considered design, and experiences that feel effortless to the people who use them.",
+        "Code, design, and continuous learning.",
       languagesHeading: "Languages",
       languages: [
         { id: "pt", name: "Portuguese", level: "Native" },
         { id: "en", name: "English", level: "B2" },
         { id: "es", name: "Spanish", level: "A2" },
+        { id: "fr", name: "French", level: "B1" },
+        { id: "it", name: "Italian", level: "A1" },
       ],
       body:
-        "With over six years in the industry, I've worked with startups and established companies alike — building everything from customer-facing products to developer tooling. I thrive in collaborative environments where design and engineering intersect.",
+        "I am a Systems Analysis and Development student with a passion for technology, modern interfaces, and lifelong learning. Currently, I focus my studies on full-stack development, building responsive and intuitive applications with a strong emphasis on user experience. Beyond coding, I am interested in AI, design, languages, and creative development—fields that help me view technology through a broader and more strategic lens.",
       skills: SKILLS,
     },
     contact: {
       kicker: "Get in touch",
       headlineLine1: "Let's build",
       headlineLine2Muted: "something",
-      headlineLine3: "together.",
+      headlineLine3: "together?",
       cta: "Start a project",
       email: "vitor@example.com",
       linkedin: "linkedin.com/in/vitor",
@@ -117,10 +121,10 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     nav: { hero: "Inicio", work: "Trabajo", about: "Sobre mí", contact: "Contacto" },
     hero: {
       kicker: "Desarrollador Web — Portafolio 2026",
-      nameSolid: "Vitor",
-      nameMuted: "Mendes",
+      nameSolid: "João",
+      nameMuted: "Vitor",
       description:
-        "Construyo experiencias web performantes y accesibles — desde interfaces pixel-perfect hasta sistemas back-end robustos.",
+        "Desarrollador web enfocado en crear experiencias modernas, responsivas e intuitivas.",
       loadingLabel: "Cargando experiencia",
     },
     work: {
@@ -137,22 +141,24 @@ export const DICTIONARIES: Record<Locale, Messages> = {
     about: {
       kicker: "Sobre mí",
       title:
-        "Me importa profundamente el oficio — código limpio, diseño pensado y experiencias que se sienten naturales para quien las usa.",
+        "Código, diseño y aprendizaje continuo.",
       languagesHeading: "Idiomas",
       languages: [
         { id: "pt", name: "Portugués", level: "Nativo" },
         { id: "en", name: "Inglés", level: "B2" },
         { id: "es", name: "Español", level: "A2" },
+        { id: "fr", name: "Francés", level: "B1" },
+        { id: "it", name: "Italiano", level: "A1" },
       ],
       body:
-        "Con más de seis años en la industria, he trabajado con startups y empresas consolidadas — construyendo desde productos para el cliente hasta herramientas para devs. Me realizo donde diseño e ingeniería se cruzan.",
+        "Soy estudiante de Análisis y Desarrollo de Sistemas y un apasionado de la tecnología, las interfaces modernas y el aprendizaje continuo. Actualmente, enfoco mis estudios en el desarrollo fullstack, creando aplicaciones responsivas e intuitivas con una excelente experiencia de usuario. Además de la programación, también me interesan la inteligencia artificial, el diseño, los idiomas y el desarrollo creativo, áreas que me permiten ver la tecnología de una forma más amplia y estratégica.",
       skills: SKILLS,
     },
     contact: {
       kicker: "Hablemos",
       headlineLine1: "Construyamos",
       headlineLine2Muted: "algo",
-      headlineLine3: "juntos.",
+      headlineLine3: "juntos?",
       cta: "Iniciar proyecto",
       email: "vitor@example.com",
       linkedin: "linkedin.com/in/vitor",
