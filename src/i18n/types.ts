@@ -2,7 +2,7 @@ export const LOCALES = ["pt", "en", "es"] as const;
 
 export type Locale = (typeof LOCALES)[number];
 
-/** ISO-style id for emoji flags and stable keys — not tied to UI locale selection. */
+
 export type AboutLanguageId = "pt" | "en" | "es" | "fr" | "it";
 
 export type AboutLanguage = {

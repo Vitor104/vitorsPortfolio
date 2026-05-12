@@ -14,7 +14,7 @@
   @apply grid items-end gap-12 lg:grid-cols-12;
 }
 
-/* Grid column lives on FadeInUp wrapper — only direct .layout children participate in lg:grid-cols-12. */
+
 .headlineReveal {
   @apply min-w-0 lg:col-span-7;
 }

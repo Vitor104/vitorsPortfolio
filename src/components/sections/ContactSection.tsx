@@ -4,9 +4,9 @@ import { FadeInUp } from "../ui/FadeInUp";
 import { LinkButton } from "../ui/LinkButton";
 
 const CONTACT = {
-  email: "mailto:hello@vitor.dev",
-  linkedin: "https://www.linkedin.com/in/vitor",
-  github: "https://github.com/vitor",
+  email: "mailto:jv7554817@gmail.com",
+  linkedin: "https://www.linkedin.com/in/jvvitor/",
+  github: "https://github.com/Vitor104",
 } as const;
 
 function MailIcon() {

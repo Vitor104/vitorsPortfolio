@@ -6,11 +6,8 @@ const easeOutExpo = [0.22, 1, 0.36, 1] as const;
 type Props = {
   children: ReactNode;
   className?: string;
-  /** Seconds; use for staggered children in the same section. */
   delay?: number;
-  /** Passed to Motion `viewport.amount`. */
   viewportAmount?: number | "some";
-  /** Initial vertical offset in px when motion is enabled. */
   y?: number;
 };
 
