@@ -26,14 +26,6 @@ import styles from "./WorkSection.module.css";
 const MAX_ITEM_WIDTH = 320;
 const ITEM_VW = 0.62;
 
-
-function publicAsset(absolutePath: string): string {
-  const base = import.meta.env.BASE_URL;
-  const path = absolutePath.startsWith("/") ? absolutePath : `/${absolutePath}`;
-  const root = base.endsWith("/") ? base.slice(0, -1) : base;
-  return root ? `${root}${path}` : path;
-}
-
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
 }
@@ -121,7 +113,7 @@ function CarouselItem({
         <div className={styles.cardImage}>
           <img
             draggable={false}
-            src={publicAsset(project.image)}
+            src={project.image}
             alt={copy.title}
             className={styles.cardImg}
           />
@@ -153,7 +145,7 @@ function CarouselItem({
         <div className={styles.cardImage}>
           <img
             draggable={false}
-            src={publicAsset(project.image)}
+            src={project.image}
             alt={copy.title}
             className={styles.cardImg}
             loading="lazy"
