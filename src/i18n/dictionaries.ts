@@ -64,7 +64,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       linkedin: "https://www.linkedin.com/in/jvvitor/",
       github: "https://github.com/Vitor104",
     },
-    footer: { rights: "Vitor's Portfolio · conteúdo estático · sem CMS" },
+    footer: { rights: "João Vitor · Desenvolvedor web" },
     theme: {
       toggleLight: "Ativar tema claro",
       toggleDark: "Ativar tema escuro",
@@ -118,7 +118,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       linkedin: "https://www.linkedin.com/in/jvvitor/",
       github: "https://github.com/Vitor104",
     },
-    footer: { rights: "Vitor's Portfolio · static content · no CMS" },
+    footer: { rights: "João Vitor · Web Developer" },
     theme: {
       toggleLight: "Activate light theme",
       toggleDark: "Activate dark theme",
