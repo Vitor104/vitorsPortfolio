@@ -1,4 +1,5 @@
 import type { Locale } from "../i18n/types";
+import imgProjects from "../data/imgProjects/FlowBill.png";
 
 export type StackTag =
   | "React"
@@ -29,7 +30,7 @@ export type Project = {
 export const PROJECTS: readonly Project[] = [
   {
     id: "flowBill",
-    url: "https://flowbill.netlify.app/",
+    url: "../data/imgProjects/FlowBill.png",
     image: "src/data/imgProjects/FlowBill.png",
     year: 2025,
     stack: ["React", "Tailwind CSS", "Lucide React"],
@@ -57,7 +58,7 @@ export const PROJECTS: readonly Project[] = [
   {
     id: "lume-dashboard",
     url: "https://lumedashboard.netlify.app/login",
-    image: "src/data/imgProjects/lumeDashboard.png",
+    image: "../data/imgProjects/lumeDashboard.png",
     year: 2026,
     stack: ["React", "Bootstrap 5", "Supabase", "Vite"],
     copy: {
@@ -84,7 +85,7 @@ export const PROJECTS: readonly Project[] = [
   {
     id: "sky-cast",
     url: "https://skycastdaily.netlify.app/",
-    image: "src/data/imgProjects/SkyCast.png",
+    image: "../data/imgProjects/SkyCast.png",
     year: 2024,
     stack: ["React", "Bootstrap 5", "OpenWeatherMap API"],
     copy: {
@@ -111,7 +112,7 @@ export const PROJECTS: readonly Project[] = [
   {
     id: "artemis-project",
     url: "https://artemiisproject.netlify.app/",
-    image: "src/data/imgProjects/ArtemisProject.png",
+    image: "../data/imgProjects/artemisProject.png",
     year: 2026,
     stack: ["React", "Vite", "GSAP", "CSS3"],
     copy: {
