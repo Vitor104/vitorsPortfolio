@@ -50,4 +50,5 @@ export type Messages = {
     github: string;
   };
   footer: { rights: string };
+  theme: { toggleLight: string; toggleDark: string };
 };

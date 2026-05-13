@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import { useI18n } from "../../i18n/I18nProvider";
+import { ThemeToggle } from "../theme/ThemeToggle";
 
 const links = [
   { href: "#work", key: "work" as const },
@@ -27,6 +28,9 @@ export function Header() {
             ))}
           </ul>
         </nav>
+        <div className={styles.actions}>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

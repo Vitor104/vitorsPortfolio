@@ -1,5 +1,5 @@
 .root {
-  @apply border-t border-ink/10 bg-canvas py-10 text-ink-muted;
+  @apply border-t border-ink/10 bg-canvas py-10 text-ink-muted dark:border-canvas/10 dark:bg-night dark:text-canvas/55;
 }
 
 .inner {

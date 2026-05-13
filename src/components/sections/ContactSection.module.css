@@ -1,5 +1,5 @@
 .section {
-  @apply bg-canvas py-24 sm:py-32;
+  @apply bg-canvas py-24 sm:py-32 dark:bg-night;
 }
 
 .inner {
@@ -20,15 +20,15 @@
 }
 
 .headline {
-  @apply m-0 flex flex-col font-display font-semibold leading-[0.95] tracking-[-0.04em] text-ink text-[clamp(3rem,9vw,7rem)];
+  @apply m-0 flex flex-col font-display font-semibold leading-[0.95] tracking-[-0.04em] text-ink text-[clamp(3rem,9vw,7rem)] dark:text-canvas;
 }
 
 .headlineLine {
-  @apply text-ink;
+  @apply text-ink dark:text-canvas;
 }
 
 .headlineMuted {
-  @apply text-ink-softer;
+  @apply text-ink-softer dark:text-canvas/40;
 }
 
 .actions {
@@ -40,16 +40,16 @@
 }
 
 .linkList {
-  @apply m-0 flex flex-col gap-3 p-0 text-sm text-ink-muted;
+  @apply m-0 flex flex-col gap-3 p-0 text-sm text-ink-muted dark:text-canvas/65;
   list-style: none;
 }
 
 .contactLink {
-  @apply inline-flex items-center gap-3 rounded text-ink-muted transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent;
+  @apply inline-flex items-center gap-3 rounded text-ink-muted transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent dark:text-canvas/65 dark:hover:text-canvas;
 }
 
 .icon {
-  @apply text-ink-muted;
+  @apply text-ink-muted dark:text-canvas/65;
 }
 
 .cta {

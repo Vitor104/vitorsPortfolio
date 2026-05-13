@@ -1,9 +1,9 @@
 .section {
-  @apply relative isolate overflow-hidden bg-canvas;
+  @apply relative isolate overflow-hidden bg-canvas dark:bg-night;
 }
 
 .loader {
-  @apply absolute inset-0 z-20 flex items-center justify-center bg-canvas/95 backdrop-blur-sm;
+  @apply absolute inset-0 z-20 flex items-center justify-center bg-canvas/95 backdrop-blur-sm dark:bg-night/95;
 }
 
 .loaderInner {
@@ -11,11 +11,11 @@
 }
 
 .loaderOrb {
-  @apply block h-12 w-12 rounded-full border-2 border-ink/15 border-t-accent;
+  @apply block h-12 w-12 rounded-full border-2 border-ink/15 border-t-accent dark:border-canvas/15 dark:border-t-accent;
 }
 
 .loaderText {
-  @apply text-xs font-medium uppercase tracking-[0.22em] text-ink-muted;
+  @apply text-xs font-medium uppercase tracking-[0.22em] text-ink-muted dark:text-canvas/55;
 }
 
 .shell {
@@ -35,13 +35,13 @@
 }
 
 .titleLine {
-  @apply text-ink;
+  @apply text-ink dark:text-canvas;
 }
 
 .titleLineMuted {
-  @apply text-ink-softer;
+  @apply text-ink-softer dark:text-canvas/40;
 }
 
 .description {
-  @apply max-w-xs text-sm leading-relaxed text-ink-muted lg:col-span-4 lg:max-w-sm lg:self-end lg:pb-3 lg:text-[0.95rem];
+  @apply max-w-xs text-sm leading-relaxed text-ink-muted lg:col-span-4 lg:max-w-sm lg:self-end lg:pb-3 lg:text-[0.95rem] dark:text-canvas/65;
 }

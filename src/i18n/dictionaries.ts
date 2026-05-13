@@ -65,6 +65,10 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       github: "https://github.com/Vitor104",
     },
     footer: { rights: "Vitor's Portfolio · conteúdo estático · sem CMS" },
+    theme: {
+      toggleLight: "Ativar tema claro",
+      toggleDark: "Ativar tema escuro",
+    },
   },
   en: {
     meta: { siteTitle: "Vitor's Portfolio", languageMenu: "Language" },
@@ -115,6 +119,10 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       github: "https://github.com/Vitor104",
     },
     footer: { rights: "Vitor's Portfolio · static content · no CMS" },
+    theme: {
+      toggleLight: "Activate light theme",
+      toggleDark: "Activate dark theme",
+    },
   },
   es: {
     meta: { siteTitle: "Portafolio de Vitor", languageMenu: "Idioma" },
@@ -165,6 +173,10 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       github: "https://github.com/Vitor104",
     },
     footer: { rights: "Vitor's Portfolio · contenido estático · sin CMS" },
+    theme: {
+      toggleLight: "Activar tema claro",
+      toggleDark: "Activar tema oscuro",
+    },
   },
 };
 

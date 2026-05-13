@@ -26,7 +26,7 @@ import styles from "./WorkSection.module.css";
 const MAX_ITEM_WIDTH = 320;
 const ITEM_VW = 0.62;
 
-/** Absolute paths in `public/` — respects Vite `base` when not `/`. */
+
 function publicAsset(absolutePath: string): string {
   const base = import.meta.env.BASE_URL;
   const path = absolutePath.startsWith("/") ? absolutePath : `/${absolutePath}`;

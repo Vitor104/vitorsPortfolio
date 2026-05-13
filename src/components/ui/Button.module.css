@@ -7,13 +7,13 @@
 }
 
 .secondary {
-  @apply border border-ink/10 bg-canvas text-ink hover:border-ink/20 hover:bg-canvas-deep;
+  @apply border border-ink/10 bg-canvas text-ink hover:border-ink/20 hover:bg-canvas-deep dark:border-canvas/10 dark:bg-night-soft dark:text-canvas dark:hover:border-canvas/20 dark:hover:bg-night;
 }
 
 .ghost {
-  @apply border border-transparent bg-transparent text-ink hover:bg-canvas-deep;
+  @apply border border-transparent bg-transparent text-ink hover:bg-canvas-deep dark:text-canvas dark:hover:bg-night-soft;
 }
 
 .dark {
-  @apply rounded-none border border-transparent bg-ink text-canvas hover:bg-night-soft;
+  @apply rounded-none border border-transparent bg-ink text-canvas hover:bg-night-soft dark:bg-canvas dark:text-ink dark:hover:bg-canvas-deep;
 }

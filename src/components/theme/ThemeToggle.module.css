@@ -1,0 +1,15 @@
+.toggle {
+  @apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-ink/10 bg-canvas/60 text-ink transition-colors hover:border-ink/30 hover:bg-canvas-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:border-canvas/15 dark:bg-night-soft/70 dark:text-canvas dark:hover:border-canvas/30 dark:hover:bg-night-soft;
+}
+
+.iconWrap {
+  @apply relative flex h-4 w-4 items-center justify-center;
+}
+
+.iconLayer {
+  @apply absolute inset-0 flex items-center justify-center;
+}
+
+.icon {
+  @apply h-4 w-4;
+}

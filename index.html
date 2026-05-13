@@ -14,6 +14,22 @@
       content="Vitor's Portfolio — desenvolvedor web, SPA multi-idioma e alta performance."
     />
     <title>Vitor's Portfolio</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var valid = stored === "light" || stored === "dark";
+          var theme = valid
+            ? stored
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (_) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

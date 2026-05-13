@@ -1,5 +1,5 @@
 .section {
-  @apply bg-night text-canvas py-24 sm:py-32;
+  @apply bg-night py-24 text-canvas sm:py-32 dark:bg-canvas-deep dark:text-ink;
 }
 
 .inner {
@@ -7,7 +7,7 @@
 }
 
 .kicker {
-  @apply text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-canvas/45;
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-canvas/45 dark:text-ink/55;
 }
 
 .layout {
@@ -19,7 +19,7 @@
 }
 
 .title {
-  @apply m-0 max-w-3xl font-display font-medium leading-[1.05] tracking-tight text-canvas text-[clamp(1.75rem,4vw,3rem)];
+  @apply m-0 max-w-3xl font-display font-medium leading-[1.05] tracking-tight text-canvas text-[clamp(1.75rem,4vw,3rem)] dark:text-ink;
 }
 
 .languagesBlock {
@@ -27,7 +27,7 @@
 }
 
 .languagesKicker {
-  @apply m-0 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-canvas/45;
+  @apply m-0 text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-canvas/45 dark:text-ink/55;
 }
 
 .languages {
@@ -44,19 +44,19 @@
 }
 
 .languageName {
-  @apply text-sm font-medium text-canvas sm:text-[0.95rem];
+  @apply text-sm font-medium text-canvas sm:text-[0.95rem] dark:text-ink;
 }
 
 .languageLevel {
-  @apply rounded-full border border-canvas/20 bg-canvas/5 px-2.5 py-0.5 text-center text-[0.65rem] font-semibold tabular-nums uppercase tracking-[0.12em] text-canvas/70;
+  @apply rounded-full border border-canvas/20 bg-canvas/5 px-2.5 py-0.5 text-center text-[0.65rem] font-semibold tabular-nums uppercase tracking-[0.12em] text-canvas/70 dark:border-ink/20 dark:bg-ink/5 dark:text-ink/70;
 }
 
 .body {
-  @apply max-w-2xl text-sm leading-relaxed text-canvas/65 sm:text-base;
+  @apply max-w-2xl text-sm leading-relaxed text-canvas/65 sm:text-base dark:text-ink/70;
 }
 
 .skills {
-  @apply mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-canvas/80 sm:grid-cols-3 lg:col-span-9 lg:col-start-4 lg:grid-cols-4 lg:gap-x-10;
+  @apply mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-canvas/80 sm:grid-cols-3 lg:col-span-9 lg:col-start-4 lg:grid-cols-4 lg:gap-x-10 dark:text-ink/80;
   list-style: none;
   padding: 0;
 }

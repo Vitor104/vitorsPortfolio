@@ -1,9 +1,9 @@
 .root {
-  @apply fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-full border border-ink/10 bg-canvas/85 px-3 py-2 shadow-[0_12px_32px_-16px_rgba(14,13,10,0.35)] backdrop-blur-md sm:bottom-6 sm:right-6;
+  @apply fixed bottom-4 right-4 z-50 flex items-center gap-2 rounded-full border border-ink/10 bg-canvas/85 px-3 py-2 shadow-[0_12px_32px_-16px_rgba(14,13,10,0.35)] backdrop-blur-md sm:bottom-6 sm:right-6 dark:border-canvas/10 dark:bg-night-soft/85 dark:shadow-[0_12px_32px_-16px_rgba(0,0,0,0.7)];
 }
 
 .caption {
-  @apply hidden text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-ink-muted sm:inline;
+  @apply hidden text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-ink-muted sm:inline dark:text-canvas/55;
 }
 
 .group {
@@ -11,9 +11,9 @@
 }
 
 .toggle {
-  @apply inline-flex h-7 min-w-[1.75rem] items-center justify-center rounded-full px-2 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-ink-muted transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  @apply inline-flex h-7 min-w-[1.75rem] items-center justify-center rounded-full px-2 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-ink-muted transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:text-canvas/55 dark:hover:text-canvas;
 }
 
 .toggleOn {
-  @apply inline-flex h-7 min-w-[1.75rem] items-center justify-center rounded-full bg-ink px-2 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-canvas focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  @apply inline-flex h-7 min-w-[1.75rem] items-center justify-center rounded-full bg-ink px-2 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-canvas focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:bg-canvas dark:text-ink;
 }

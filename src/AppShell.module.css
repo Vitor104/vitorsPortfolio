@@ -1,5 +1,5 @@
 .root {
-  @apply min-h-screen bg-canvas text-ink antialiased;
+  @apply min-h-screen bg-canvas text-ink antialiased transition-colors duration-200 dark:bg-night dark:text-canvas;
 }
 
 .main {

@@ -1,6 +1,6 @@
 .section {
   /* scroll-mt: in-page #work + sticky header; extra top padding avoids kicker sitting under header */
-  @apply relative overflow-hidden scroll-mt-28 bg-canvas pb-24 pt-28 sm:scroll-mt-32 sm:pb-32 sm:pt-32;
+  @apply relative overflow-hidden scroll-mt-28 bg-canvas pb-24 pt-28 sm:scroll-mt-32 sm:pb-32 sm:pt-32 dark:bg-night;
 }
 
 .inner {
@@ -20,7 +20,7 @@
 }
 
 .counter {
-  @apply text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-ink-muted;
+  @apply text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-ink-muted dark:text-canvas/55;
 }
 
 .stage {
@@ -60,7 +60,7 @@
 }
 
 .cardImage {
-  @apply relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-ink/10 shadow-[0_30px_60px_-30px_rgba(14,13,10,0.55)] sm:rounded-2xl;
+  @apply relative aspect-[3/4] w-full overflow-hidden rounded-xl bg-ink/10 shadow-[0_30px_60px_-30px_rgba(14,13,10,0.55)] sm:rounded-2xl dark:bg-canvas/10 dark:shadow-[0_30px_60px_-30px_rgba(0,0,0,0.85)];
 }
 
 .cardImg {
@@ -82,7 +82,7 @@
 }
 
 .cardYear {
-  @apply text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-ink-muted;
+  @apply text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-ink-muted dark:text-canvas/55;
 }
 
 .tagList {
@@ -90,19 +90,19 @@
 }
 
 .tag {
-  @apply rounded-full bg-ink px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-canvas;
+  @apply rounded-full bg-ink px-2.5 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.12em] text-canvas dark:bg-canvas dark:text-ink;
 }
 
 .cardTitle {
-  @apply font-display text-xl font-semibold leading-tight tracking-tight text-ink sm:text-2xl;
+  @apply font-display text-xl font-semibold leading-tight tracking-tight text-ink sm:text-2xl dark:text-canvas;
 }
 
 .cardTagline {
-  @apply text-sm leading-relaxed text-ink-muted;
+  @apply text-sm leading-relaxed text-ink-muted dark:text-canvas/65;
 }
 
 .cardCta {
-  @apply relative z-10 mt-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-ink/15 bg-canvas/80 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink hover:border-ink/30 hover:bg-canvas-deep;
+  @apply relative z-10 mt-2 inline-flex items-center justify-center gap-2 self-center rounded-full border border-ink/15 bg-canvas/80 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-ink hover:border-ink/30 hover:bg-canvas-deep dark:border-canvas/15 dark:bg-night-soft/70 dark:text-canvas dark:hover:border-canvas/30 dark:hover:bg-night-soft;
   cursor: pointer;
   touch-action: manipulation;
   pointer-events: auto;
@@ -113,7 +113,7 @@
 }
 
 .arrow {
-  @apply inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 bg-canvas/60 text-lg text-ink hover:border-ink/30 hover:bg-canvas-deep disabled:opacity-40;
+  @apply inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 bg-canvas/60 text-lg text-ink hover:border-ink/30 hover:bg-canvas-deep disabled:opacity-40 dark:border-canvas/15 dark:bg-night-soft/70 dark:text-canvas dark:hover:border-canvas/30 dark:hover:bg-night-soft;
 }
 
 .dots {
@@ -127,7 +127,7 @@
 }
 
 .dot {
-  @apply w-1.5 bg-ink/25 hover:bg-ink/40;
+  @apply w-1.5 bg-ink/25 hover:bg-ink/40 dark:bg-canvas/25 dark:hover:bg-canvas/40;
 }
 
 .dotActive {
@@ -143,15 +143,15 @@
 }
 
 .modalDesc {
-  @apply text-sm leading-relaxed text-ink-muted;
+  @apply text-sm leading-relaxed text-ink-muted dark:text-canvas/65;
 }
 
 .stackBlock {
-  @apply rounded-xl border border-ink/10 bg-canvas-deep/50 p-4;
+  @apply rounded-xl border border-ink/10 bg-canvas-deep/50 p-4 dark:border-canvas/10 dark:bg-night-soft/50;
 }
 
 .stackLabel {
-  @apply text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-ink-muted;
+  @apply text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-ink-muted dark:text-canvas/55;
 }
 
 .stackList {
@@ -159,7 +159,7 @@
 }
 
 .stackItem {
-  @apply rounded-full bg-ink px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-canvas;
+  @apply rounded-full bg-ink px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-canvas dark:bg-canvas dark:text-ink;
 }
 
 .visit {
