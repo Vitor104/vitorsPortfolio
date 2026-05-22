@@ -6,7 +6,7 @@ import { LinkButton } from "../ui/LinkButton";
 const CONTACT = {
   email: "mailto:jv7554817@gmail.com",
   linkedin: "https://www.linkedin.com/in/jvvitor/",
-  github: "https://github.com/Vitor104",
+  github: "https://github.com/madebyvitor",
 } as const;
 
 function MailIcon() {
