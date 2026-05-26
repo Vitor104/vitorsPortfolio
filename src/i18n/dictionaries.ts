@@ -62,9 +62,9 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       cta: "Iniciar projeto",
       email: "jv7554817@gmail.com",
       linkedin: "https://www.linkedin.com/in/jvvitor/",
-      github: "https://github.com/Vitor104",
+      github: "https://github.com/madebyvitor",
     },
-    footer: { rights: "João Vitor · Desenvolvedor web" },
+    footer: { rights: "João Vitor · Desenvolvedor Web" },
     theme: {
       toggleLight: "Ativar tema claro",
       toggleDark: "Ativar tema escuro",
@@ -116,7 +116,7 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       cta: "Start a project",
       email: "jv7554817@gmail.com",
       linkedin: "https://www.linkedin.com/in/jvvitor/",
-      github: "https://github.com/Vitor104",
+      github: "https://github.com/madebyvitor",
     },
     footer: { rights: "João Vitor · Web Developer" },
     theme: {
@@ -170,9 +170,9 @@ export const DICTIONARIES: Record<Locale, Messages> = {
       cta: "Iniciar proyecto",
       email: "jv7554817@gmail.com",
       linkedin: "https://www.linkedin.com/in/jvvitor/",
-      github: "https://github.com/Vitor104",
+      github: "https://github.com/madebyvitor",
     },
-    footer: { rights: "Vitor's Portfolio · contenido estático · sin CMS" },
+    footer: { rights: "João Vitor · Desarrollador Web" },
     theme: {
       toggleLight: "Activar tema claro",
       toggleDark: "Activar tema oscuro",
