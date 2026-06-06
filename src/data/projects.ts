@@ -4,6 +4,7 @@ import imgArtemisProject from "./imgProjects/artemisProject.png";
 import imgFlowBill from "./imgProjects/FlowBill.png";
 import imgLumeDashboard from "./imgProjects/lumeDashboard.png";
 import imgSkyCast from "./imgProjects/SkyCast.png";
+import imgSynoire from "./imgProjects/synoire.png";
 
 export type StackTag =
   | "React"
@@ -137,6 +138,33 @@ export const PROJECTS: readonly Project[] = [
         tagline: "Scrollytelling inmersivo por el espacio profundo",
         description:
           "Experiencia cinematográfica con desplazamiento horizontal simulado (Fake Horizontal Scroll), animaciones vinculadas al scroll de alto rendimiento y degradación elegante para dispositivos móviles.",
+      },
+    },
+  },
+  {
+    id: "synoire",
+    url: "https://synoire.com.br/",
+    image: imgSynoire,
+    year: 2026,
+    stack: ["React", "Vite", "Tailwind CSS"],
+    copy: {
+      pt: {
+        title: "Synoire",
+        tagline: "Plataforma social de estudos e networking para estudantes",
+        description:
+          "Plataforma social que conecta estudantes, com foco primariamente em ser um espaço de concentração, oferecendo salas imersivas, métricas de estudos e pomodoro sincronizado.",
+      },
+      en: {
+        title: "Synoire",
+        tagline: "Social platform for students to study and network",
+        description:
+          "Social platform that connects students, primarily focused on providing a space for concentration, featuring immersive study rooms, study metrics, and synchronized Pomodoro sessions.",
+      },
+      es: {
+        title: "Synoire",
+        tagline: "Plataforma social para estudiantes para estudiar y networking",
+        description:
+          "Plataforma social que conecta a estudiantes, centrada principalmente en ofrecer un espacio de concentración, con salas inmersivas, métricas de estudio y sesiones de Pomodoro sincronizadas.",
       },
     },
   },
